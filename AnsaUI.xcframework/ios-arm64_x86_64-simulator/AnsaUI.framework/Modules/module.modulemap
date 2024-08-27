@@ -1,0 +1,11 @@
+framework module AnsaUI {
+  umbrella header "AnsaUI.h"
+  export *
+
+  module * { export * }
+}
+
+module AnsaUI.Swift {
+  header "AnsaUI-Swift.h"
+  requires objc
+}

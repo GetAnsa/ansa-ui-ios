@@ -1,0 +1,405 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AnsaUI
+import AnsaCore
+@_exported import AnsaUI
+import BasisTheoryElements
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class AnsaTheme {
+  public static func set(brandColors: AnsaUI.BrandColors? = nil, fonts: AnsaUI.AnsaFonts? = nil)
+  @objc deinit
+}
+public struct PaymentMethodUiModel : Swift.Equatable, Swift.Hashable {
+  public init(id: Swift.String, card: AnsaUI.CardUiModel, isExpired: Swift.Bool)
+  public var obfuscatedCardNumber: Swift.String {
+    get
+  }
+  public func isValid() -> Swift.Bool
+  public static func == (a: AnsaUI.PaymentMethodUiModel, b: AnsaUI.PaymentMethodUiModel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CardUiModel : Swift.Equatable, Swift.Hashable {
+  public init(brand: AnsaUI.CardBrand, firstSix: Swift.String, lastFour: Swift.String)
+  public static func == (a: AnsaUI.CardUiModel, b: AnsaUI.CardUiModel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CardBrand {
+  case amex
+  case mastercard
+  case maestro
+  case visa
+  case visaElectron
+  case discover
+  case dinersClub
+  case unknown
+  public var displayname: Swift.String {
+    get
+  }
+  public var imageSource: AnsaUI.AnsaImageSource {
+    get
+  }
+  public static func == (a: AnsaUI.CardBrand, b: AnsaUI.CardBrand) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PaymentMethodPreview : SwiftUI.View {
+  public init(selectedPaymentMethod: AnsaUI.PaymentMethodUiModel?, onClick: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI20PaymentMethodPreviewV4bodyQrvp", 0) __
+}
+
+public struct AnsaErrorView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A9ErrorViewV4bodyQrvp", 0) __
+}
+
+public struct BrandColors {
+  public init(primary: SwiftUI.Color? = nil, secondary: SwiftUI.Color? = nil)
+}
+public struct AnsaImage : SwiftUI.View {
+  public init(source: AnsaUI.AnsaImageSource, renderingMode: SwiftUI.Image.TemplateRenderingMode = .original)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A5ImageV4bodyQrvp", 0) __
+}
+public enum AnsaImageSource : Swift.String {
+  case autopay
+  case wallet
+  case sparkle
+  case alert
+  case close
+  case check
+  case error
+  case backArrow
+  case chevronRight
+  case chevronLeft
+  case plus
+  case errorCard
+  case placeholderCard
+  case applePay
+  case americanExpress
+  case dinersClub
+  case discover
+  case maestro
+  case masterCard
+  case visaElectron
+  case visa
+  case ansaCard
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnsaButtonState {
+  case disabled
+  case loading
+  case enabled
+  public var isEnabled: Swift.Bool {
+    get
+  }
+  public var isLoading: Swift.Bool {
+    get
+  }
+  public static func == (a: AnsaUI.AnsaButtonState, b: AnsaUI.AnsaButtonState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum AutoReloadUiModel {
+  case enabled(paymentMethodId: Swift.String?, reloadAmount: Swift.Int?, reloadThreshold: Swift.Int?)
+  case disabled(reloadThreshold: Swift.Int?)
+}
+public enum AutoReloadUpdateInfo {
+  case enabled(paymentMethodId: Swift.String, reloadAmount: Swift.Int, reloadThreshold: Swift.Int)
+  case disabled
+}
+public struct AutoReloadActionView : SwiftUI.View {
+  public init(uiModel: AnsaUI.AutoReloadUiModel, onClick: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI20AutoReloadActionViewV4bodyQrvp", 0) __
+}
+
+public typealias AddPaymentSourceClick = (() -> Swift.Void)
+@_Concurrency.MainActor(unsafe) public struct AddFundsBottomSheet : SwiftUI.View {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, AnsaUI.PaymentMethodUiModel) async -> Swift.Void)
+  #endif
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI19AddFundsBottomSheetV4bodyQrvp", 0) __
+}
+
+public struct TransactionHistoryTable : SwiftUI.View {
+  public init(transactions: [AnsaUI.TransactionUiModel])
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI23TransactionHistoryTableV4bodyQrvp", 0) __
+}
+
+public let testTransactions: [AnsaUI.TransactionUiModel]
+@_Concurrency.MainActor(unsafe) public struct ManagedAnsaBalanceScreen : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), addPaymentSourceClick: AnsaUI.AddPaymentSourceClick?)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI07ManagedA13BalanceScreenV4bodyQrvp", 0) __
+}
+public struct AnsaActionView<EndSlotView> : SwiftUI.View where EndSlotView : SwiftUI.View {
+  public init(icon: SwiftUI.Image?, label: Swift.String, subtitle: Swift.String? = nil, endSlot: @escaping () -> EndSlotView, onClick: @escaping () -> Swift.Void)
+  public init(icon: SwiftUI.Image?, label: Swift.String, subtitle: Swift.String? = nil, onClick: @escaping () -> Swift.Void) where EndSlotView == SwiftUI.Color
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A10ActionViewV4bodyQrvp", 0) __<EndSlotView>
+}
+
+public struct AnsaFonts {
+}
+public struct TitleFonts {
+}
+public struct BodyFonts {
+}
+@_hasMissingDesignatedInitializers public class PaymentMethodUpdateManager {
+  @objc deinit
+}
+public typealias AmountInCents = Swift.Int
+public typealias AmountInDollars = Swift.Double
+public struct AnsaBalanceScreen : SwiftUI.View {
+  #if compiler(>=5.3) && $AsyncAwait
+  public init(walletBalance: Swift.String, alertViewUiModel: AnsaUI.AlertViewUiModel?, autoReloadUiModel: AnsaUI.AutoReloadUiModel?, transactions: [AnsaUI.TransactionUiModel], cardArtUrl: Swift.String?, isDemoMode: Swift.Bool, addFundsClick: @escaping () -> Swift.Void, autoReloadRowClick: @escaping () -> Swift.Void, onRefreshRequsted: @escaping () async -> Swift.Void, onBackClick: (() -> Swift.Void)? = nil)
+  #endif
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A13BalanceScreenV4bodyQrvp", 0) __
+}
+
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CurrencyUITextField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) public init(value: SwiftUI.Binding<Swift.Int>, fontSize: Swift.Int, hintText: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func deleteBackward()
+  @_Concurrency.MainActor(unsafe) public func updateValue(value: Swift.Int)
+  @objc deinit
+}
+
+public struct AlertViewUiModel {
+  public let primaryText: Swift.String
+  public let secondaryText: Swift.String?
+  public let alertViewType: AnsaUI.AlertViewType
+  public init(primaryText: Swift.String, secondaryText: Swift.String?, alertViewType: AnsaUI.AlertViewType)
+}
+public enum AlertViewType {
+  case bonus
+  case alert
+  public static func == (a: AnsaUI.AlertViewType, b: AnsaUI.AlertViewType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct AnsaButton : SwiftUI.View {
+  public let label: Swift.String
+  public let enabled: Swift.Bool
+  public let backgroundColor: SwiftUI.Color
+  public let labelColor: SwiftUI.Color
+  public let cornerRadius: CoreFoundation.CGFloat
+  public let isLoading: Swift.Bool
+  public let leftIcon: SwiftUI.Image?
+  public let rightIcon: SwiftUI.Image?
+  public let onClick: () -> Swift.Void
+  public init(label: Swift.String, enabled: Swift.Bool = true, backgroundColor: SwiftUI.Color? = nil, labelColor: SwiftUI.Color? = nil, cornerRadius: CoreFoundation.CGFloat = 8, isLoading: Swift.Bool = false, leftIcon: SwiftUI.Image? = nil, rightIcon: SwiftUI.Image? = nil, onClick: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A6ButtonV4bodyQrvp", 0) __
+}
+
+public enum CustomCurrencyInputSetting : Swift.Hashable {
+  case enabled(AnsaUI.ValidCurrencyRange)
+  case disabled
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: AnsaUI.CustomCurrencyInputSetting, b: AnsaUI.CustomCurrencyInputSetting) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AnsaUI.CustomCurrencyInputSetting {
+  public var minimumAmount: AnsaUI.AmountInCents? {
+    get
+  }
+  public var maximumAmount: AnsaUI.AmountInCents? {
+    get
+  }
+  public func isInputValid(input: AnsaUI.AmountInCents) -> Swift.Bool
+  public func inputErrorMessage(input: AnsaUI.AmountInCents) -> Swift.String?
+}
+public struct ValidCurrencyRange : Swift.Hashable {
+  public init(minimum: AnsaUI.AmountInCents?, maximum: AnsaUI.AmountInCents?)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: AnsaUI.ValidCurrencyRange, b: AnsaUI.ValidCurrencyRange) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ReloadBucketUiModel : Swift.Hashable {
+  public init(id: Swift.String, reloadAmount: Swift.Int, bonusAmount: Swift.Int?)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: AnsaUI.ReloadBucketUiModel, b: AnsaUI.ReloadBucketUiModel) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Swift.Array where Element == AnsaUI.ReloadBucketUiModel {
+  public func hasBonus() -> Swift.Bool
+}
+extension AnsaUI.ReloadBucketUiModel {
+  public var topUpAmountDisplayString: Swift.String {
+    get
+  }
+  public var bonusAmountDisplayString: Swift.String? {
+    get
+  }
+  public func hasBonus() -> Swift.Bool
+  public func isSelected(currentSelection: AnsaUI.ReloadAmountSelection?) -> Swift.Bool
+  public func topUpAndBonusDisplayString() -> Foundation.AttributedString
+}
+extension Swift.Array where Element == AnsaUI.ReloadBucketUiModel {
+  public func getDefaultBucket() -> AnsaUI.ReloadBucketUiModel?
+}
+public struct ReloadBucketView : SwiftUI.View {
+  public init(uiModel: AnsaUI.ReloadBucketUiModel, isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI16ReloadBucketViewV4bodyQrvp", 0) __
+}
+
+
+public struct AlertView : SwiftUI.View {
+  public let uiModel: AnsaUI.AlertViewUiModel
+  public init(uiModel: AnsaUI.AlertViewUiModel)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI9AlertViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor(unsafe) public struct AutoReloadBottomSheetView : SwiftUI.View {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public init(autoReloadUiModel: AnsaUI.AutoReloadUiModel, reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], addPaymentSourceClick: @escaping () -> Swift.Void, onSaveClick: @escaping (AnsaUI.AutoReloadUpdateInfo) async -> Swift.Void)
+  #endif
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI25AutoReloadBottomSheetViewV4bodyQrvp", 0) __
+}
+
+public let testAutoReloadUiModelEnabled: AnsaUI.AutoReloadUiModel
+public let testReloadBuckets: [AnsaUI.ReloadBucketUiModel]
+public let testPaymentMethodUiModels: [AnsaUI.PaymentMethodUiModel]
+public enum PaymentCardType : Swift.String {
+  case amex
+  case mastercard
+  case maestro
+  case visa
+  case visaElectron
+  case discover
+  case dinersClub
+  public static var all: [AnsaUI.PaymentCardType]
+  public init?(cardNumber: Swift.String)
+  public static func suggestedTypeForCardNumber(_ cardNumber: Swift.String?) -> AnsaUI.PaymentCardType?
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ReloadAmountSelection {
+  case preconfigured(AnsaUI.ReloadBucketUiModel)
+  case custom(AnsaUI.AmountInDollars)
+}
+public struct TransactionUiModel : Swift.Hashable {
+  public init(id: Swift.String, transactionText: Swift.String, dataAndTimeText: Swift.String, amount: Swift.String, isCredit: Swift.Bool?)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: AnsaUI.TransactionUiModel, b: AnsaUI.TransactionUiModel) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct AnsaTransactionView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A15TransactionViewV4bodyQrvp", 0) __
+}
+
+public typealias AddPaymentMethodCompletion = (Swift.Result<AnsaShared.PaymentMethod, any Swift.Error>) -> Swift.Void
+@_Concurrency.MainActor(unsafe) public struct AddNewCardBottomSheetView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI25AddNewCardBottomSheetViewV4bodyQrvp", 0) __
+}
+public struct CurrencyTextField : SwiftUI.UIViewRepresentable {
+  public typealias UIViewType = AnsaUI.CurrencyUITextField
+  public init(value: SwiftUI.Binding<Swift.Int>, forceOverrideValue: SwiftUI.Binding<Swift.Int>, fontSize: Swift.Int, hintText: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: AnsaUI.CurrencyTextField.Context) -> AnsaUI.CurrencyUITextField
+  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: AnsaUI.CurrencyUITextField, context: AnsaUI.CurrencyTextField.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+}
+public struct CurrencyTextFieldSwiftUIWrapper : SwiftUI.UIViewRepresentable {
+  public init(_ placeholder: Swift.String = "", value: SwiftUI.Binding<Swift.Double?>, isResponder: SwiftUI.Binding<Swift.Bool>? = nil, tag: Swift.Int = 0, alwaysShowFractions: Swift.Bool = true, numberOfDecimalPlaces: Swift.Int = 2, currencySymbol: Swift.String? = "$", font: UIKit.UIFont? = nil, foregroundColor: UIKit.UIColor? = nil, accentColor: UIKit.UIColor? = nil, textAlignment: UIKit.NSTextAlignment? = nil, contentType: UIKit.UITextContentType? = nil, autocorrection: UIKit.UITextAutocorrectionType = .default, autocapitalization: UIKit.UITextAutocapitalizationType = .sentences, keyboardType: UIKit.UIKeyboardType = .decimalPad, returnKeyType: UIKit.UIReturnKeyType = .default, isSecure: Swift.Bool = false, isUserInteractionEnabled: Swift.Bool = true, clearsOnBeginEditing: Swift.Bool = false, onDoneClick: @escaping () -> Swift.Void = {}, onReturn: @escaping () -> Swift.Void = {}, onEditingChanged: @escaping (Swift.Bool) -> Swift.Void = { _ in })
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: SwiftUI.UIViewRepresentableContext<AnsaUI.CurrencyTextFieldSwiftUIWrapper>) -> UIKit.UITextField
+  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> AnsaUI.CurrencyTextFieldSwiftUIWrapper.Coordinator
+  @_Concurrency.MainActor(unsafe) public func updateUIView(_ textField: UIKit.UITextField, context: SwiftUI.UIViewRepresentableContext<AnsaUI.CurrencyTextFieldSwiftUIWrapper>)
+  @_Concurrency.MainActor(unsafe) public static func dismantleUIView(_ uiView: UIKit.UITextField, coordinator: AnsaUI.CurrencyTextFieldSwiftUIWrapper.Coordinator)
+  @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Coordinator : ObjectiveC.NSObject, UIKit.UITextFieldDelegate {
+    @_Concurrency.MainActor(unsafe) @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+    @objc deinit
+  }
+  public typealias Body = Swift.Never
+  public typealias UIViewType = UIKit.UITextField
+}
+extension AnsaUI.CardBrand : Swift.Equatable {}
+extension AnsaUI.CardBrand : Swift.Hashable {}
+extension AnsaUI.AnsaImageSource : Swift.Equatable {}
+extension AnsaUI.AnsaImageSource : Swift.Hashable {}
+extension AnsaUI.AnsaImageSource : Swift.RawRepresentable {}
+extension AnsaUI.AnsaButtonState : Swift.Equatable {}
+extension AnsaUI.AnsaButtonState : Swift.Hashable {}
+extension AnsaUI.AlertViewType : Swift.Equatable {}
+extension AnsaUI.AlertViewType : Swift.Hashable {}
+extension AnsaUI.PaymentCardType : Swift.Equatable {}
+extension AnsaUI.PaymentCardType : Swift.Hashable {}
+extension AnsaUI.PaymentCardType : Swift.RawRepresentable {}
