@@ -1169,6 +1169,13 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1178,13 +1185,6 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AnsaUI"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
@@ -1311,15 +1311,15 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
@@ -3290,15 +3290,15 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AnsaCore",
+        "printedName": "AnsaCore",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
       {
         "kind": "Import",
-        "name": "AnsaCore",
-        "printedName": "AnsaCore",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
@@ -4306,8 +4306,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "BasisTheoryElements",
+        "printedName": "BasisTheoryElements",
         "declKind": "Import",
         "moduleName": "AnsaUI",
         "declAttributes": [
@@ -4316,8 +4316,22 @@
       },
       {
         "kind": "Import",
-        "name": "BasisTheoryElements",
-        "printedName": "BasisTheoryElements",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaCore",
+        "printedName": "AnsaCore",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
@@ -4332,20 +4346,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaUI"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "AnsaUI"
-      },
-      {
-        "kind": "Import",
-        "name": "AnsaCore",
-        "printedName": "AnsaCore",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
@@ -6369,6 +6369,9 @@
             "usr": "s:6AnsaUI26CustomCurrencyInputSettingO13minimumAmountSiSgvp",
             "mangledName": "$s6AnsaUI26CustomCurrencyInputSettingO13minimumAmountSiSgvp",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "accessors": [
               {
@@ -6424,6 +6427,9 @@
             "usr": "s:6AnsaUI26CustomCurrencyInputSettingO13maximumAmountSiSgvp",
             "mangledName": "$s6AnsaUI26CustomCurrencyInputSettingO13maximumAmountSiSgvp",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "accessors": [
               {
@@ -6477,6 +6483,9 @@
             "usr": "s:6AnsaUI26CustomCurrencyInputSettingO02isE5Valid5inputSbSi_tF",
             "mangledName": "$s6AnsaUI26CustomCurrencyInputSettingO02isE5Valid5inputSbSi_tF",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -6510,6 +6519,9 @@
             "usr": "s:6AnsaUI26CustomCurrencyInputSettingO17inputErrorMessage0G0SSSgSi_tF",
             "mangledName": "$s6AnsaUI26CustomCurrencyInputSettingO17inputErrorMessage0G0SSSgSi_tF",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
@@ -6894,6 +6906,9 @@
             "usr": "s:6AnsaUI19ReloadBucketUiModelV24topUpAmountDisplayStringSSvp",
             "mangledName": "$s6AnsaUI19ReloadBucketUiModelV24topUpAmountDisplayStringSSvp",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "accessors": [
               {
@@ -6941,6 +6956,9 @@
             "usr": "s:6AnsaUI19ReloadBucketUiModelV24bonusAmountDisplayStringSSSgvp",
             "mangledName": "$s6AnsaUI19ReloadBucketUiModelV24bonusAmountDisplayStringSSSgvp",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "accessors": [
               {
@@ -6988,6 +7006,9 @@
             "usr": "s:6AnsaUI19ReloadBucketUiModelV8hasBonusSbyF",
             "mangledName": "$s6AnsaUI19ReloadBucketUiModelV8hasBonusSbyF",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7021,6 +7042,9 @@
             "usr": "s:6AnsaUI19ReloadBucketUiModelV10isSelected16currentSelectionSbAA0c6AmountJ0OSg_tF",
             "mangledName": "$s6AnsaUI19ReloadBucketUiModelV10isSelected16currentSelectionSbAA0c6AmountJ0OSg_tF",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7040,6 +7064,9 @@
             "usr": "s:6AnsaUI19ReloadBucketUiModelV26topUpAndBonusDisplayString10Foundation010AttributedL0VyF",
             "mangledName": "$s6AnsaUI19ReloadBucketUiModelV26topUpAndBonusDisplayString10Foundation010AttributedL0VyF",
             "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
@@ -7775,8 +7802,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AnsaCore",
+        "printedName": "AnsaCore",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
@@ -7789,8 +7816,8 @@
       },
       {
         "kind": "Import",
-        "name": "AnsaCore",
-        "printedName": "AnsaCore",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
@@ -8856,6 +8883,13 @@
       },
       {
         "kind": "Import",
+        "name": "AnsaCore",
+        "printedName": "AnsaCore",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8865,13 +8899,6 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AnsaUI"
-      },
-      {
-        "kind": "Import",
-        "name": "AnsaCore",
-        "printedName": "AnsaCore",
         "declKind": "Import",
         "moduleName": "AnsaUI"
       },
@@ -10007,6 +10034,9 @@
             "moduleName": "AnsaUI",
             "genericSig": "<τ_0_0 where τ_0_0 == AnsaUI.ReloadBucketUiModel>",
             "sugared_genericSig": "<Element where Element == AnsaUI.ReloadBucketUiModel>",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -10036,6 +10066,9 @@
             "moduleName": "AnsaUI",
             "genericSig": "<τ_0_0 where τ_0_0 == AnsaUI.ReloadBucketUiModel>",
             "sugared_genericSig": "<Element where Element == AnsaUI.ReloadBucketUiModel>",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
@@ -10766,7 +10799,7 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/ManagedAddFundsBottomSheet.swift",
       "kind": "BooleanLiteral",
-      "offset": 217,
+      "offset": 215,
       "length": 5,
       "value": "false"
     },
@@ -11116,70 +11149,70 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/AutoReload\/AutoReloadActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1689,
+      "offset": 1672,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/AutoReload\/AutoReloadActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1841,
+      "offset": 1825,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheet.swift",
       "kind": "StringLiteral",
-      "offset": 3412,
+      "offset": 3392,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheet.swift",
       "kind": "StringLiteral",
-      "offset": 3499,
+      "offset": 3479,
       "length": 8,
       "value": "\"400040\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheet.swift",
       "kind": "StringLiteral",
-      "offset": 3529,
+      "offset": 3509,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheet.swift",
       "kind": "BooleanLiteral",
-      "offset": 3566,
+      "offset": 3546,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheet.swift",
       "kind": "StringLiteral",
-      "offset": 3621,
+      "offset": 3601,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheet.swift",
       "kind": "StringLiteral",
-      "offset": 3708,
+      "offset": 3688,
       "length": 8,
       "value": "\"400040\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheet.swift",
       "kind": "StringLiteral",
-      "offset": 3738,
+      "offset": 3718,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheet.swift",
       "kind": "BooleanLiteral",
-      "offset": 3775,
+      "offset": 3755,
       "length": 4,
       "value": "true"
     },
@@ -11473,322 +11506,322 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1339,
+      "offset": 1332,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1466,
+      "offset": 1457,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1488,
+      "offset": 1479,
       "length": 13,
       "value": "\"Card number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1542,
+      "offset": 1533,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1724,
+      "offset": 1713,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1753,
+      "offset": 1742,
       "length": 13,
       "value": "\"Card number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1980,
+      "offset": 1967,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2165,
+      "offset": 2152,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2180,
+      "offset": 2167,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2235,
+      "offset": 2222,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2250,
+      "offset": 2237,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2655,
+      "offset": 2636,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2902,
+      "offset": 2881,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3028,
+      "offset": 3007,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3180,
+      "offset": 3157,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3202,
+      "offset": 3179,
       "length": 11,
       "value": "\"Exp. Date\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3260,
+      "offset": 3237,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3462,
+      "offset": 3437,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3491,
+      "offset": 3466,
       "length": 7,
       "value": "\"MM\/YY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3718,
+      "offset": 3691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3829,
+      "offset": 3802,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3971,
+      "offset": 3942,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3993,
+      "offset": 3964,
       "length": 5,
       "value": "\"CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4045,
+      "offset": 4016,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4240,
+      "offset": 4209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4269,
+      "offset": 4238,
       "length": 5,
       "value": "\"CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4487,
+      "offset": 4454,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4598,
+      "offset": 4565,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4757,
+      "offset": 4722,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4874,
+      "offset": 4839,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5019,
+      "offset": 4982,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5041,
+      "offset": 5004,
       "length": 10,
       "value": "\"Zip Code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5098,
+      "offset": 5061,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5279,
+      "offset": 5240,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5343,
+      "offset": 5304,
       "length": 10,
       "value": "\"Zip Code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5414,
+      "offset": 5371,
       "length": 5,
       "value": "\"\\d\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5803,
+      "offset": 5750,
       "length": 6,
       "value": "\"Save\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5880,
+      "offset": 5827,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6001,
+      "offset": 5948,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6031,
+      "offset": 5978,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6194,
+      "offset": 6139,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6302,
+      "offset": 6247,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6705,
+      "offset": 6642,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6799,
+      "offset": 6734,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6892,
+      "offset": 6825,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/BasisTheoryCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6989,
+      "offset": 6920,
       "length": 5,
       "value": "false"
     },
@@ -11837,63 +11870,63 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1460,
+      "offset": 1456,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6324,
+      "offset": 6253,
       "length": 3,
       "value": "212"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6370,
+      "offset": 6299,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6419,
+      "offset": 6348,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "StringLiteral",
-      "offset": 6481,
+      "offset": 6410,
       "length": 8,
       "value": "\"$21.32\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "StringLiteral",
-      "offset": 6550,
+      "offset": 6479,
       "length": 25,
       "value": "\"Your funds expire soon!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "StringLiteral",
-      "offset": 6598,
+      "offset": 6527,
       "length": 25,
       "value": "\"$9.36 expires on July 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "StringLiteral",
-      "offset": 6765,
+      "offset": 6694,
       "length": 121,
       "value": "\"https:\/\/ansa-sandbox-virtual-card-assets.s3.amazonaws.com\/3a8528eb-d0d5-46b6-9adb-62f669de55e5\/1234-abcd-efg-hijk-lmnop\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 6904,
+      "offset": 6833,
       "length": 4,
       "value": "true"
     },
@@ -11914,14 +11947,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/SheetHeader.swift",
       "kind": "StringLiteral",
-      "offset": 1333,
+      "offset": 1309,
       "length": 14,
       "value": "\"Sheet header\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/ManagedAutoReloadBottomSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 223,
+      "offset": 221,
       "length": 5,
       "value": "false"
     },
@@ -12110,182 +12143,182 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2425,
+      "offset": 2445,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3322,
+      "offset": 3342,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "StringLiteral",
-      "offset": 3400,
+      "offset": 3417,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3427,
+      "offset": 3444,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3454,
+      "offset": 3471,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3485,
+      "offset": 3502,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "StringLiteral",
-      "offset": 3568,
+      "offset": 3585,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3595,
+      "offset": 3612,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3653,
+      "offset": 3670,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "StringLiteral",
-      "offset": 3736,
+      "offset": 3753,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3763,
+      "offset": 3780,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3790,
+      "offset": 3807,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/ReloadBucketView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3821,
+      "offset": 3838,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3125,
+      "offset": 3090,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "FloatLiteral",
-      "offset": 3184,
+      "offset": 3149,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3208,
+      "offset": 3173,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3278,
+      "offset": 3243,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3300,
+      "offset": 3265,
       "length": 5,
       "value": "25000"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "FloatLiteral",
-      "offset": 3379,
+      "offset": 3340,
       "length": 4,
       "value": "0.32"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3404,
+      "offset": 3365,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3474,
+      "offset": 3435,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3496,
+      "offset": 3457,
       "length": 5,
       "value": "25000"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "FloatLiteral",
-      "offset": 3575,
+      "offset": 3532,
       "length": 5,
       "value": "59.28"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3601,
+      "offset": 3558,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3670,
+      "offset": 3627,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Reload\/CurrencyInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3692,
+      "offset": 3649,
       "length": 5,
       "value": "25000"
     },
@@ -12341,203 +12374,203 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4649,
+      "offset": 4578,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4663,
+      "offset": 4592,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 4873,
+      "offset": 4804,
       "length": 5,
       "value": "\"456\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4896,
+      "offset": 4827,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4921,
+      "offset": 4852,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 4993,
+      "offset": 4924,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5016,
+      "offset": 4947,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5079,
+      "offset": 5010,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5102,
+      "offset": 5033,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5125,
+      "offset": 5056,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5165,
+      "offset": 5096,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5188,
+      "offset": 5119,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5212,
+      "offset": 5143,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5298,
+      "offset": 5229,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5373,
+      "offset": 5304,
       "length": 8,
       "value": "\"400040\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5399,
+      "offset": 5330,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5428,
+      "offset": 5359,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5471,
+      "offset": 5402,
       "length": 5,
       "value": "\"456\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5546,
+      "offset": 5477,
       "length": 8,
       "value": "\"400040\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5572,
+      "offset": 5503,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5601,
+      "offset": 5532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5644,
+      "offset": 5575,
       "length": 5,
       "value": "\"789\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5725,
+      "offset": 5656,
       "length": 8,
       "value": "\"400040\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5751,
+      "offset": 5682,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5780,
+      "offset": 5711,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5822,
+      "offset": 5753,
       "length": 8,
       "value": "\"101112\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5906,
+      "offset": 5837,
       "length": 8,
       "value": "\"400040\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 5932,
+      "offset": 5863,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5961,
+      "offset": 5892,
       "length": 5,
       "value": "false"
     },
@@ -12670,49 +12703,49 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/ViewModifiers\/PressActionsViewModifier.swift",
       "kind": "BooleanLiteral",
-      "offset": 117,
+      "offset": 115,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/ViewModifiers\/PressActionsViewModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 693,
+      "offset": 597,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Transactions\/AnsaTransactionView.swift",
       "kind": "StringLiteral",
-      "offset": 1406,
+      "offset": 1414,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Transactions\/AnsaTransactionView.swift",
       "kind": "StringLiteral",
-      "offset": 1434,
+      "offset": 1442,
       "length": 11,
       "value": "\"Add Funds\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Transactions\/AnsaTransactionView.swift",
       "kind": "StringLiteral",
-      "offset": 1470,
+      "offset": 1478,
       "length": 20,
       "value": "\"May 17 • 8:32 AM\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Transactions\/AnsaTransactionView.swift",
       "kind": "StringLiteral",
-      "offset": 1506,
+      "offset": 1514,
       "length": 8,
       "value": "\"$25.00\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Transactions\/AnsaTransactionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1532,
+      "offset": 1540,
       "length": 4,
       "value": "true"
     },
@@ -12726,7 +12759,7 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddPaymentSource\/AddNewCardBottomSheetView.swift",
       "kind": "StringLiteral",
-      "offset": 2057,
+      "offset": 2031,
       "length": 22,
       "value": "\"AnsaUI.AddNewCardViewDelegate\""
     },
@@ -12789,21 +12822,21 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/Currency\/CurrencyTextFieldSwiftUIWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7464,
+      "offset": 7447,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/Currency\/CurrencyTextFieldSwiftUIWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 7034,
+      "offset": 7017,
       "length": 11,
       "value": "\"AnsaUI.Coordinator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/Currency\/CurrencyTextFieldSwiftUIWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 15012,
+      "offset": 14995,
       "length": 5,
       "value": "false"
     },
