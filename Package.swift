@@ -8,7 +8,6 @@ let package = Package(
         .library(name: "AnsaUI", targets: ["AnsaUIWrapper"]),
     ],
     dependencies: [
-       .package(url: "https://github.com/GetAnsa/ansa-core-ios", from: "0.1.0"),
        .package(url: "https://github.com/Basis-Theory/basistheory-ios", from: "4.1.2")
     ],
     targets: [
@@ -17,11 +16,15 @@ let package = Package(
             path: "AnsaUI.xcframework"
         ),
 
-    
+        .binaryTarget(
+            name: "AnsaCore",
+            path: "../AnsaCore/AnsaCore.xcframework"
+        ),
+
         .target(
             name: "AnsaUIWrapper",
             dependencies: [
-                 .product(name: "AnsaCore", package: "ansa-core-ios"),
+                 "AnsaCore",
                  "AnsaUI",
                  .product(name: "BasisTheoryElements", package: "basistheory-ios"),
             ],
