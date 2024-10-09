@@ -18,7 +18,7 @@ let package = Package(
 
         .binaryTarget(
             name: "AnsaCore",
-            path: "../AnsaCore/AnsaCore.xcframework"
+            path: "AnsaCore.xcframework"
         ),
 
         .target(

@@ -333,6 +333,7 @@ SWIFT_CLASS("_TtC6AnsaUI19CurrencyUITextField")
 
 
 
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -659,6 +660,7 @@ SWIFT_CLASS("_TtC6AnsaUI19CurrencyUITextField")
 - (void)deleteBackward;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 

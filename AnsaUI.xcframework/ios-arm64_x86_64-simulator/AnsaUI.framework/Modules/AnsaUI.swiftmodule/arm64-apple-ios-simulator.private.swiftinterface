@@ -1,10 +1,9 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AnsaUI
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature AccessLevelOnImport -enable-bare-slash-regex -module-name AnsaUI
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AnsaCore
 @_exported import AnsaUI
-import BasisTheoryElements
 import Combine
 import DeveloperToolsSupport
 import Foundation
@@ -78,21 +77,6 @@ public enum CardBrand {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI20PaymentMethodPreviewV4bodyQrvp", 0) __
 }
 
-@_Concurrency.MainActor @preconcurrency public struct CardTextFieldWrapper : SwiftUI.UIViewRepresentable {
-  public typealias UIViewType = BasisTheoryElements.TextElementUITextField
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: AnsaUI.CardTextFieldWrapper.Context) -> BasisTheoryElements.TextElementUITextField
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ textField: BasisTheoryElements.TextElementUITextField, context: AnsaUI.CardTextFieldWrapper.Context)
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> AnsaUI.CardTextFieldWrapper.Coordinator
-  @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject {
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    public typealias Failure = any Swift.Error
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    public typealias Input = BasisTheoryElements.ElementEvent
-    @objc deinit
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = Swift.Never
-}
 @_Concurrency.MainActor @preconcurrency public struct AnsaErrorView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -149,8 +133,6 @@ extension AnsaShared.VirtualCard : Swift.Identifiable {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Swift.String
 }
-public let testCreateVirtualCard: AnsaShared.VirtualCard
-public let testProvisionVirtualCard: AnsaShared.Provisioning
 public enum AnsaButtonState {
   case disabled
   case loading
@@ -183,7 +165,6 @@ public enum AutoReloadUpdateInfo {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI20AutoReloadActionViewV4bodyQrvp", 0) __
 }
-
 public typealias AddPaymentSourceClick = (() -> Swift.Void)
 @_Concurrency.MainActor @preconcurrency public struct AddFundsBottomSheet : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, AnsaUI.PaymentMethodUiModel) async -> Swift.Void)
@@ -193,7 +174,6 @@ public typealias AddPaymentSourceClick = (() -> Swift.Void)
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI19AddFundsBottomSheetV4bodyQrvp", 0) __
 }
-
 @_Concurrency.MainActor @preconcurrency public struct TransactionHistoryTable : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(transactions: [AnsaUI.TransactionUiModel])
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -202,8 +182,6 @@ public typealias AddPaymentSourceClick = (() -> Swift.Void)
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI23TransactionHistoryTableV4bodyQrvp", 0) __
 }
-
-public let testTransactions: [AnsaUI.TransactionUiModel]
 @_Concurrency.MainActor @preconcurrency public struct ManagedAnsaBalanceScreen<Content> : SwiftUICore.View where Content : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, triggerRefresh: SwiftUICore.Binding<Swift.Bool> = .constant(false), addPaymentSourceContent: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, triggerRefresh: SwiftUICore.Binding<Swift.Bool> = .constant(false)) where Content == SwiftUICore.EmptyView
@@ -252,7 +230,6 @@ public typealias AmountInDollars = Swift.Double
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A13BalanceScreenV4bodyQrvp", 0) __
 }
-
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CurrencyUITextField : UIKit.UITextField {
   @_Concurrency.MainActor @preconcurrency public init(value: SwiftUICore.Binding<Swift.Int>, fontSize: Swift.Int, hintText: Swift.String?)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
@@ -397,21 +374,6 @@ extension Swift.Array where Element == AnsaUI.ReloadBucketUiModel {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI16ReloadBucketViewV4bodyQrvp", 0) __
 }
 
-@_Concurrency.MainActor @preconcurrency public struct CardNumberTextFieldWrapper : SwiftUI.UIViewRepresentable {
-  public typealias UIViewType = BasisTheoryElements.CardNumberUITextField
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: AnsaUI.CardNumberTextFieldWrapper.Context) -> BasisTheoryElements.CardNumberUITextField
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ cardNumberField: BasisTheoryElements.CardNumberUITextField, context: AnsaUI.CardNumberTextFieldWrapper.Context)
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> AnsaUI.CardNumberTextFieldWrapper.Coordinator
-  @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject {
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    public typealias Failure = any Swift.Error
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    public typealias Input = BasisTheoryElements.ElementEvent
-    @objc deinit
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = Swift.Never
-}
 
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func ansaNavigationBar<LeadingSlotView, TrailingSlotView>(title: Swift.String = "Wallet", leadingSlot: @escaping (() -> LeadingSlotView), trailingSlot: @escaping (() -> TrailingSlotView)) -> some SwiftUICore.View where LeadingSlotView : SwiftUICore.View, TrailingSlotView : SwiftUICore.View
@@ -441,10 +403,6 @@ extension SwiftUICore.View {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI25AutoReloadBottomSheetViewV4bodyQrvp", 0) __
 }
-
-public let testAutoReloadUiModelEnabled: AnsaUI.AutoReloadUiModel
-public let testReloadBuckets: [AnsaUI.ReloadBucketUiModel]
-public let testPaymentMethodUiModels: [AnsaUI.PaymentMethodUiModel]
 public enum PaymentCardType : Swift.String {
   case amex
   case mastercard
@@ -551,8 +509,6 @@ extension AnsaUI.CardBrand : Swift.Equatable {}
 extension AnsaUI.CardBrand : Swift.Hashable {}
 extension AnsaUI.AboutTapToPayActionView : Swift.Sendable {}
 extension AnsaUI.PaymentMethodPreview : Swift.Sendable {}
-extension AnsaUI.CardTextFieldWrapper : Swift.Sendable {}
-extension AnsaUI.CardTextFieldWrapper.Coordinator : Combine.Subscriber {}
 extension AnsaUI.AnsaErrorView : Swift.Sendable {}
 extension AnsaUI.AnsaImage : Swift.Sendable {}
 extension AnsaUI.AnsaImageSource : Swift.Equatable {}
@@ -577,8 +533,6 @@ extension AnsaUI.BasisTheoryAddCardView : Swift.Sendable {}
 extension AnsaUI.BasisTheoryCardView : Swift.Sendable {}
 extension AnsaUI.BasisTheoryCardDetailsView : Swift.Sendable {}
 extension AnsaUI.ReloadBucketView : Swift.Sendable {}
-extension AnsaUI.CardNumberTextFieldWrapper : Swift.Sendable {}
-extension AnsaUI.CardNumberTextFieldWrapper.Coordinator : Combine.Subscriber {}
 extension AnsaUI.AlertView : Swift.Sendable {}
 extension AnsaUI.AutoReloadBottomSheetView : Swift.Sendable {}
 extension AnsaUI.PaymentCardType : Swift.Equatable {}
