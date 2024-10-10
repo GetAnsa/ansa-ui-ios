@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "AnsaUI", targets: ["AnsaUIWrapper"]),
     ],
     dependencies: [
-       .package(url: "https://github.com/GetAnsa/ansa-core-ios", from: "0.1.5"),
+       .package(url: "https://github.com/GetAnsa/ansa-core-ios", from: "0.1.6"),
        .package(url: "https://github.com/Basis-Theory/basistheory-ios", from: "4.1.2")
     ],
     targets: [
