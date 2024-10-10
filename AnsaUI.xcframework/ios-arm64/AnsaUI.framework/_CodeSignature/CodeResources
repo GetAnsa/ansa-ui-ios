@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		0eNd7mAYAceoEt9PDNO8cVo94dg=
+		0ubx1gXrzh0XjnxX1+Hj1o2udFU=
 		</data>
 		<key>Headers/AnsaUI-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hCv5vfBhPifc8vOWq/IFPmpgE08=
+		f2wjNPhaLE/OEnaPodPpV7ade8c=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		0QBj/JLd/FCn0wsA66LGymagsbo=
+		3Gy/0aoQTYBCOXJChIVRQ28ZzT0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LNIo5cL3SFlwA9/zqpau1vNKQHkge2O6OCBVT7/SO/8=
+			owO7H0RlP8HYboV5eaQh8t6wpATSsBTeWb4dCeO0ulk=
 			</data>
 		</dict>
 		<key>Headers/AnsaUI-Swift.h</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UVJJp6+y5K0nBtIiGg4JbU2COgBV9YULuRPvBAbLY/8=
+			XJGZi8g/hkgeNCtOSCqwfYbtEAjSNWsEFE1f5cIhI/Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
