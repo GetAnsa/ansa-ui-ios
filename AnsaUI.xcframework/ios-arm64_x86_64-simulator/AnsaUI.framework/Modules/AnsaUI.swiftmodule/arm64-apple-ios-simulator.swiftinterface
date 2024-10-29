@@ -18,8 +18,15 @@ import _SwiftConcurrencyShims
   public static func set(brandColors: AnsaUI.BrandColors? = nil, fonts: AnsaUI.AnsaFonts? = nil)
   @objc deinit
 }
-public struct PaymentMethodUiModel : Swift.Equatable, Swift.Hashable {
-  public init(id: Swift.String, card: AnsaUI.CardUiModel, isExpired: Swift.Bool)
+public enum PaymentMethodUiModel : Swift.Equatable, Swift.Hashable {
+  case creditCard(uiModel: AnsaUI.CardUiModel)
+  case applePay
+  public var imageSource: AnsaUI.AnsaImageSource {
+    get
+  }
+  public var id: Swift.String? {
+    get
+  }
   public var obfuscatedCardNumber: Swift.String {
     get
   }
@@ -31,7 +38,7 @@ public struct PaymentMethodUiModel : Swift.Equatable, Swift.Hashable {
   }
 }
 public struct CardUiModel : Swift.Equatable, Swift.Hashable {
-  public init(brand: AnsaUI.CardBrand, firstSix: Swift.String, lastFour: Swift.String)
+  public init(id: Swift.String, brand: AnsaUI.CardBrand, firstSix: Swift.String, lastFour: Swift.String, isExpired: Swift.Bool)
   public static func == (a: AnsaUI.CardUiModel, b: AnsaUI.CardUiModel) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -165,7 +172,7 @@ public struct AutoReloadActionView : SwiftUI.View {
 public typealias AddPaymentSourceClick = (() -> Swift.Void)
 @_Concurrency.MainActor(unsafe) public struct AddFundsBottomSheet : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, AnsaUI.PaymentMethodUiModel) async -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], applePayConfiguration: AnsaUI.ApplePayConfiguration?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Void)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -180,8 +187,8 @@ public struct TransactionHistoryTable : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI23TransactionHistoryTableV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor(unsafe) public struct ManagedAnsaBalanceScreen<Content> : SwiftUI.View where Content : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), addPaymentSourceContent: @escaping () -> Content)
-  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false)) where Content == SwiftUI.EmptyView
+  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), addPaymentSourceContent: @escaping () -> Content)
+  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false)) where Content == SwiftUI.EmptyView
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -233,6 +240,19 @@ public struct AnsaBalanceScreen : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func deleteBackward()
   @_Concurrency.MainActor(unsafe) public func updateValue(value: Swift.Int)
   @objc deinit
+}
+public struct ApplePayConfiguration {
+  #if compiler(>=5.3) && $AsyncAwait
+  public init(applePayMerchantName: Swift.String, applePayMerchantId: Swift.String, addApplePaymentMethod: ((PassKit.PKPayment) async -> AnsaUI.ApplePayResult)? = nil)
+  #endif
+}
+public enum ApplePayResult {
+  case success(Swift.String)
+  case failure(AnsaUI.ApplePayError)
+}
+public enum ApplePayError : Swift.Error {
+  case readableError(Swift.String)
+  case genericError
 }
 @_Concurrency.MainActor(unsafe) public struct TapToPayAddToWalletView : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
