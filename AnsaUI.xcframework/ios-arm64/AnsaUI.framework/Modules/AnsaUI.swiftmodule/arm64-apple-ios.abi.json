@@ -13764,6 +13764,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/ManagedAddFundsBottomSheet.swift",
+      "kind": "BooleanLiteral",
+      "offset": 296,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 180,
