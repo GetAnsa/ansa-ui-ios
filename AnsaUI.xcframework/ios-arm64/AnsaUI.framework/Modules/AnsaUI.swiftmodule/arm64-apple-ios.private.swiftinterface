@@ -172,7 +172,7 @@ public struct AutoReloadActionView : SwiftUI.View {
 public typealias AddPaymentSourceClick = (() -> Swift.Void)
 @_Concurrency.MainActor(unsafe) public struct AddFundsBottomSheet : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], applePayConfiguration: AnsaUI.ApplePayConfiguration?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], applePayConfiguration: AnsaUI.ApplePayConfiguration?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<AnsaShared.BalanceUpdate, AnsaUI.AnsaError>)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -248,9 +248,9 @@ public struct ApplePayConfiguration {
 }
 public enum ApplePayResult {
   case success(Swift.String)
-  case failure(AnsaUI.ApplePayError)
+  case failure(AnsaUI.AnsaError)
 }
-public enum ApplePayError : Swift.Error {
+public enum AnsaError : Swift.Error {
   case readableError(Swift.String)
   case genericError
 }
@@ -409,7 +409,7 @@ public struct AlertView : SwiftUI.View {
 
 @_Concurrency.MainActor(unsafe) public struct AutoReloadBottomSheetView : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor(unsafe) public init(autoReloadUiModel: AnsaUI.AutoReloadUiModel, reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], addPaymentSourceClick: @escaping () -> Swift.Void, onSaveClick: @escaping (AnsaUI.AutoReloadUpdateInfo) async -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public init(autoReloadUiModel: AnsaUI.AutoReloadUiModel, reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], addPaymentSourceClick: @escaping () -> Swift.Void, onSaveClick: @escaping (AnsaUI.AutoReloadUpdateInfo) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaUI.AnsaError>)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
