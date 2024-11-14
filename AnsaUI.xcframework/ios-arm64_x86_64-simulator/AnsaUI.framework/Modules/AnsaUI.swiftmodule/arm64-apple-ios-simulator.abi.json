@@ -194,6 +194,43 @@
           },
           {
             "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaUI.PaymentMethodUiModel.Type) -> AnsaUI.PaymentMethodUiModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentMethodUiModel",
+                    "printedName": "AnsaUI.PaymentMethodUiModel",
+                    "usr": "s:6AnsaUI20PaymentMethodUiModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaUI.PaymentMethodUiModel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentMethodUiModel",
+                        "printedName": "AnsaUI.PaymentMethodUiModel",
+                        "usr": "s:6AnsaUI20PaymentMethodUiModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6AnsaUI20PaymentMethodUiModelO7unknownyA2CmF",
+            "mangledName": "$s6AnsaUI20PaymentMethodUiModelO7unknownyA2CmF",
+            "moduleName": "AnsaUI"
+          },
+          {
+            "kind": "Var",
             "name": "imageSource",
             "printedName": "imageSource",
             "children": [
@@ -1425,6 +1462,171 @@
         "mangledName": "$s6AnsaUI20PaymentMethodPreviewV",
         "moduleName": "AnsaUI",
         "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RedeemGiftCardBottomSheetView",
+        "printedName": "RedeemGiftCardBottomSheetView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(onAddCardClick:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RedeemGiftCardBottomSheetView",
+                "printedName": "AnsaUI.RedeemGiftCardBottomSheetView",
+                "usr": "s:6AnsaUI29RedeemGiftCardBottomSheetViewV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) async -> Swift.Result<(), AnsaUI.AnsaError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), AnsaUI.AnsaError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnsaError",
+                        "printedName": "AnsaUI.AnsaError",
+                        "usr": "s:6AnsaUI0A5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6AnsaUI29RedeemGiftCardBottomSheetViewV05onAddE5ClickACs6ResultOyytAA0A5ErrorOGSSYac_tcfc",
+            "mangledName": "$s6AnsaUI29RedeemGiftCardBottomSheetViewV05onAddE5ClickACs6ResultOyytAA0A5ErrorOGSSYac_tcfc",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI29RedeemGiftCardBottomSheetViewV4bodyQrvp",
+            "mangledName": "$s6AnsaUI29RedeemGiftCardBottomSheetViewV4bodyQrvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI29RedeemGiftCardBottomSheetViewV4bodyQrvg",
+                "mangledName": "$s6AnsaUI29RedeemGiftCardBottomSheetViewV4bodyQrvg",
+                "moduleName": "AnsaUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6AnsaUI29RedeemGiftCardBottomSheetViewV",
+        "mangledName": "$s6AnsaUI29RedeemGiftCardBottomSheetViewV",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "Custom",
           "AccessControl"
         ],
         "conformances": [
@@ -2970,6 +3172,116 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GiftCardActionView",
+        "printedName": "GiftCardActionView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI18GiftCardActionViewV4bodyQrvp",
+            "mangledName": "$s6AnsaUI18GiftCardActionViewV4bodyQrvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI18GiftCardActionViewV4bodyQrvg",
+                "mangledName": "$s6AnsaUI18GiftCardActionViewV4bodyQrvg",
+                "moduleName": "AnsaUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6AnsaUI18GiftCardActionViewV",
+        "mangledName": "$s6AnsaUI18GiftCardActionViewV",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AnsaCore",
         "printedName": "AnsaCore",
         "declKind": "Import",
@@ -3871,18 +4183,18 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<AnsaShared.BalanceUpdate, AnsaUI.AnsaError>",
+                "printedName": "(AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaUI.AnsaError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaUI.AnsaError>",
+                    "printedName": "Swift.Result<any AnsaShared.BalanceUpdate, AnsaUI.AnsaError>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "BalanceUpdate",
-                        "printedName": "AnsaShared.BalanceUpdate",
-                        "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                        "printedName": "any AnsaShared.BalanceUpdate",
+                        "usr": "c:objc(pl)AnsaSharedBalanceUpdate"
                       },
                       {
                         "kind": "TypeNominal",
@@ -3916,8 +4228,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI19AddFundsBottomSheetV13reloadBuckets26customCurrencyInputSetting14paymentMethods21applePayConfiguration21addPaymentSourceClick0rdU0ACSayAA19ReloadBucketUiModelVG_AA06CustomjkL0OSayAA0s6MethodxY0OGAA05ApplepQ0VSgyycs6ResultOySo0A19SharedBalanceUpdateCAA0A5ErrorOGAA0V15AmountSelectionO_SStYactcfc",
-            "mangledName": "$s6AnsaUI19AddFundsBottomSheetV13reloadBuckets26customCurrencyInputSetting14paymentMethods21applePayConfiguration21addPaymentSourceClick0rdU0ACSayAA19ReloadBucketUiModelVG_AA06CustomjkL0OSayAA0s6MethodxY0OGAA05ApplepQ0VSgyycs6ResultOySo0A19SharedBalanceUpdateCAA0A5ErrorOGAA0V15AmountSelectionO_SStYactcfc",
+            "usr": "s:6AnsaUI19AddFundsBottomSheetV13reloadBuckets26customCurrencyInputSetting14paymentMethods21applePayConfiguration21addPaymentSourceClick0rdU0ACSayAA19ReloadBucketUiModelVG_AA06CustomjkL0OSayAA0s6MethodxY0OGAA05ApplepQ0VSgyycs6ResultOySo0A19SharedBalanceUpdate_pAA0A5ErrorOGAA0V15AmountSelectionO_SStYactcfc",
+            "mangledName": "$s6AnsaUI19AddFundsBottomSheetV13reloadBuckets26customCurrencyInputSetting14paymentMethods21applePayConfiguration21addPaymentSourceClick0rdU0ACSayAA19ReloadBucketUiModelVG_AA06CustomjkL0OSayAA0s6MethodxY0OGAA05ApplepQ0VSgyycs6ResultOySo0A19SharedBalanceUpdate_pAA0A5ErrorOGAA0V15AmountSelectionO_SStYactcfc",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "Custom",
@@ -5239,7 +5551,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(walletBalance:alertViewUiModel:tapToPayUiModel:autoReloadUiModel:transactions:cardArtUrl:isDemoMode:ansaLogger:addFundsClick:autoReloadRowClick:createVirtualCardAction:provisionVirtualCardAction:onRefreshRequsted:onBackClick:)",
+            "printedName": "init(walletBalance:alertViewUiModel:tapToPayUiModel:autoReloadUiModel:giftCardConfigUiModel:transactions:cardArtUrl:isDemoMode:ansaLogger:addFundsClick:autoReloadRowClick:redeemGiftCardClick:createVirtualCardAction:provisionVirtualCardAction:onRefreshRequsted:onBackClick:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5291,6 +5603,20 @@
                     "name": "AutoReloadUiModel",
                     "printedName": "AnsaUI.AutoReloadUiModel",
                     "usr": "s:6AnsaUI17AutoReloadUiModelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaUI.GiftCardConfigurationUiModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GiftCardConfigurationUiModel",
+                    "printedName": "AnsaUI.GiftCardConfigurationUiModel",
+                    "usr": "s:6AnsaUI28GiftCardConfigurationUiModelV"
                   }
                 ],
                 "usr": "s:Sq"
@@ -5368,6 +5694,46 @@
                     "printedName": "()"
                   }
                 ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) async -> Swift.Result<(), AnsaUI.AnsaError>)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) async -> Swift.Result<(), AnsaUI.AnsaError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), AnsaUI.AnsaError>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnsaError",
+                            "printedName": "AnsaUI.AnsaError",
+                            "usr": "s:6AnsaUI0A5ErrorO"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -5492,8 +5858,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI0A13BalanceScreenV06walletC016alertViewUiModel08tapToPayhI0010autoReloadhI012transactions10cardArtUrl10isDemoMode10ansaLogger13addFundsClick0mn3RowZ023createVirtualCardAction26provisionVirtualCardAction17onRefreshRequsted06onBackZ0ACSS_AA05AlertghI0VSgAA03TapklhI0VSgAA04AutonhI0OSgSayAA011TransactionhI0VGSSSgSbSo0a6SharedaW0_pyycyycs6ResultOySo0A17SharedVirtualCardC0A4Core0A8ApiErrorVGyYacA5_ySo0A18SharedProvisioningCA10_GSS_So0A20SharedWalletProviderCtYacyyYacyycSgtcfc",
-            "mangledName": "$s6AnsaUI0A13BalanceScreenV06walletC016alertViewUiModel08tapToPayhI0010autoReloadhI012transactions10cardArtUrl10isDemoMode10ansaLogger13addFundsClick0mn3RowZ023createVirtualCardAction26provisionVirtualCardAction17onRefreshRequsted06onBackZ0ACSS_AA05AlertghI0VSgAA03TapklhI0VSgAA04AutonhI0OSgSayAA011TransactionhI0VGSSSgSbSo0a6SharedaW0_pyycyycs6ResultOySo0A17SharedVirtualCardC0A4Core0A8ApiErrorVGyYacA5_ySo0A18SharedProvisioningCA10_GSS_So0A20SharedWalletProviderCtYacyyYacyycSgtcfc",
+            "usr": "s:6AnsaUI0A13BalanceScreenV06walletC016alertViewUiModel08tapToPayhI0010autoReloadhI0014giftCardConfighI012transactions10cardArtUrl10isDemoMode10ansaLogger13addFundsClick0mN8RowClick010redeemGiftP5Click013createVirtualP6Action016provisionVirtualP6Action17onRefreshRequsted11onBackClickACSS_AA05AlertghI0VSgAA03TapklhI0VSgAA04AutonhI0OSgAA04Giftp13ConfigurationhI0VSgSayAA011TransactionhI0VGSSSgSbSo0a6SharedaZ0_pyycyycs6ResultOyytAA0A5ErrorOGSSYacSgA10_ySo0a13SharedVirtualP0C0A4Core0A8ApiErrorVGyYacA10_ySo0A18SharedProvisioningCA19_GSS_So0A20SharedWalletProviderCtYacyyYacyycSgtcfc",
+            "mangledName": "$s6AnsaUI0A13BalanceScreenV06walletC016alertViewUiModel08tapToPayhI0010autoReloadhI0014giftCardConfighI012transactions10cardArtUrl10isDemoMode10ansaLogger13addFundsClick0mN8RowClick010redeemGiftP5Click013createVirtualP6Action016provisionVirtualP6Action17onRefreshRequsted11onBackClickACSS_AA05AlertghI0VSgAA03TapklhI0VSgAA04AutonhI0OSgAA04Giftp13ConfigurationhI0VSgSayAA011TransactionhI0VGSSSgSbSo0a6SharedaZ0_pyycyycs6ResultOyytAA0A5ErrorOGSSYacSgA10_ySo0a13SharedVirtualP0C0A4Core0A8ApiErrorVGyYacA10_ySo0A18SharedProvisioningCA19_GSS_So0A20SharedWalletProviderCtYacyyYacyycSgtcfc",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "AccessControl"
@@ -7948,6 +8314,18 @@
         "printedName": "PassKit",
         "declKind": "Import",
         "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GiftCardConfigurationUiModel",
+        "printedName": "GiftCardConfigurationUiModel",
+        "declKind": "Struct",
+        "usr": "s:6AnsaUI28GiftCardConfigurationUiModelV",
+        "mangledName": "$s6AnsaUI28GiftCardConfigurationUiModelV",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -10654,6 +11032,23 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaCore",
+        "printedName": "AnsaCore",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -11883,6 +12278,20 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -12973,6 +13382,190 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ansaSheet",
+            "printedName": "ansaSheet(isPresented:onDismiss:content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP04AnsaB0E9ansaSheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lF",
+            "mangledName": "$s7SwiftUI4ViewP04AnsaB0E9ansaSheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lF",
+            "moduleName": "AnsaUI",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self, Content where Self : SwiftUI.View, Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ansaSheet",
+            "printedName": "ansaSheet(item:onDismiss:content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<τ_1_0?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_1_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_1_0) -> τ_1_1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP04AnsaB0E9ansaSheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lF",
+            "mangledName": "$s7SwiftUI4ViewP04AnsaB0E9ansaSheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lF",
+            "moduleName": "AnsaUI",
+            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : SwiftUI.View, τ_1_0 : Swift.Identifiable, τ_1_1 : SwiftUI.View>",
+            "sugared_genericSig": "<Self, Item, Content where Self : SwiftUI.View, Item : Swift.Identifiable, Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -12993,6 +13586,84 @@
           "Available"
         ],
         "isExternal": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Result",
+        "printedName": "Result",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "success",
+            "printedName": "success()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s6ResultO6AnsaUIytRszrlE7successAByytq_GyFZ",
+            "mangledName": "$ss6ResultO6AnsaUIytRszrlE7successAByytq_GyFZ",
+            "moduleName": "AnsaUI",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == (), τ_0_1 : Swift.Error>",
+            "sugared_genericSig": "<Success, Failure where Success == (), Failure : Swift.Error>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:s6ResultO",
+        "mangledName": "$ss6ResultO",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error>",
+        "sugared_genericSig": "<Success, Failure where Failure : Swift.Error>",
+        "declAttributes": [
+          "Frozen"
+        ],
+        "isExternal": true,
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -14186,6 +14857,13 @@
       "value": "\"ansa_card\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/GIftCards\/GiftCardActionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 103,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/TapToPay\/TapToPayViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 448,
@@ -14384,28 +15062,28 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2064,
+      "offset": 2384,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6603,
+      "offset": 7097,
       "length": 3,
       "value": "212"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6649,
+      "offset": 7143,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6698,
+      "offset": 7192,
       "length": 3,
       "value": "250"
     },
@@ -14587,42 +15265,42 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1054,
+      "offset": 1150,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "Array",
-      "offset": 1205,
+      "offset": 1301,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "Array",
-      "offset": 1275,
+      "offset": 1371,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1392,
+      "offset": 1488,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1439,
+      "offset": 1535,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1491,
+      "offset": 1587,
       "length": 5,
       "value": "false"
     },
@@ -15024,6 +15702,34 @@
       "offset": 605,
       "length": 13,
       "value": "\"Diners Club\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/GIftCards\/GiftCardBottomSheetViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 296,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/GIftCards\/GiftCardBottomSheetViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 347,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/GIftCards\/GiftCardBottomSheetViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 395,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/GIftCards\/GiftCardBottomSheetViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 446,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/ViewModifiers\/PressActionsViewModifier.swift",

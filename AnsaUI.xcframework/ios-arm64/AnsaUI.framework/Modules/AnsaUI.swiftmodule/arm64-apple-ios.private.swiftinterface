@@ -21,6 +21,7 @@ import _SwiftConcurrencyShims
 public enum PaymentMethodUiModel : Swift.Equatable, Swift.Hashable {
   case creditCard(uiModel: AnsaUI.CardUiModel)
   case applePay
+  case unknown
   public var imageSource: AnsaUI.AnsaImageSource {
     get
   }
@@ -81,6 +82,16 @@ public struct PaymentMethodPreview : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI20PaymentMethodPreviewV4bodyQrvp", 0) __
 }
 
+@_Concurrency.MainActor(unsafe) public struct RedeemGiftCardBottomSheetView : SwiftUI.View {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public init(onAddCardClick: @escaping AnsaUI.RedeemGiftCardAction)
+  #endif
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI29RedeemGiftCardBottomSheetViewV4bodyQrvp", 0) __
+}
+
 public struct AnsaErrorView : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -129,6 +140,12 @@ public enum AnsaImageSource : Swift.String {
     get
   }
 }
+public struct GiftCardActionView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI18GiftCardActionViewV4bodyQrvp", 0) __
+}
 #if compiler(>=5.3) && $AsyncAwait
 public typealias CreateVirtualCardAction = () async -> (Swift.Result<AnsaShared.VirtualCard, AnsaCore.AnsaApiError>)
 #endif
@@ -172,7 +189,7 @@ public struct AutoReloadActionView : SwiftUI.View {
 public typealias AddPaymentSourceClick = (() -> Swift.Void)
 @_Concurrency.MainActor(unsafe) public struct AddFundsBottomSheet : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], applePayConfiguration: AnsaUI.ApplePayConfiguration?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<AnsaShared.BalanceUpdate, AnsaUI.AnsaError>)
+  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], applePayConfiguration: AnsaUI.ApplePayConfiguration?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaUI.AnsaError>)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -227,7 +244,7 @@ public typealias AmountInCents = Swift.Int
 public typealias AmountInDollars = Swift.Double
 public struct AnsaBalanceScreen : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  public init(walletBalance: Swift.String, alertViewUiModel: AnsaUI.AlertViewUiModel?, tapToPayUiModel: AnsaUI.TapToPayUiModel?, autoReloadUiModel: AnsaUI.AutoReloadUiModel?, transactions: [AnsaUI.TransactionUiModel], cardArtUrl: Swift.String?, isDemoMode: Swift.Bool, ansaLogger: any AnsaShared.AnsaLogger, addFundsClick: @escaping () -> Swift.Void, autoReloadRowClick: @escaping () -> Swift.Void, createVirtualCardAction: @escaping AnsaUI.CreateVirtualCardAction, provisionVirtualCardAction: @escaping AnsaUI.ProvisioningVirtualCardAction, onRefreshRequsted: @escaping () async -> Swift.Void, onBackClick: (() -> Swift.Void)? = nil)
+  public init(walletBalance: Swift.String, alertViewUiModel: AnsaUI.AlertViewUiModel?, tapToPayUiModel: AnsaUI.TapToPayUiModel?, autoReloadUiModel: AnsaUI.AutoReloadUiModel?, giftCardConfigUiModel: AnsaUI.GiftCardConfigurationUiModel?, transactions: [AnsaUI.TransactionUiModel], cardArtUrl: Swift.String?, isDemoMode: Swift.Bool, ansaLogger: any AnsaShared.AnsaLogger, addFundsClick: @escaping () -> Swift.Void, autoReloadRowClick: @escaping () -> Swift.Void, redeemGiftCardClick: AnsaUI.RedeemGiftCardAction?, createVirtualCardAction: @escaping AnsaUI.CreateVirtualCardAction, provisionVirtualCardAction: @escaping AnsaUI.ProvisioningVirtualCardAction, onRefreshRequsted: @escaping () async -> Swift.Void, onBackClick: (() -> Swift.Void)? = nil)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -306,6 +323,8 @@ public struct AnsaButton : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A6ButtonV4bodyQrvp", 0) __
 }
 
+public struct GiftCardConfigurationUiModel {
+}
 public struct TapToPayUiModel {
   public init(merchantName: Swift.String)
 }
@@ -335,6 +354,9 @@ public struct CustomCurrencyInputUiModel : Swift.Hashable {
   public var hashValue: Swift.Int {
     get
   }
+}
+extension Swift.Result where Success == () {
+  public static func success() -> Swift.Result<Success, Failure>
 }
 @_Concurrency.MainActor(unsafe) public struct BasisTheoryAddCardView : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
@@ -437,6 +459,9 @@ public enum ReloadAmountSelection {
   case preconfigured(AnsaUI.ReloadBucketUiModel)
   case custom(AnsaUI.AmountInDollars)
 }
+#if compiler(>=5.3) && $AsyncAwait
+public typealias RedeemGiftCardAction = (Swift.String) async -> (Swift.Result<Swift.Void, AnsaUI.AnsaError>)
+#endif
 public struct TransactionUiModel : Swift.Hashable {
   public init(id: Swift.String, transactionText: Swift.String, dataAndTimeText: Swift.String, amount: Swift.String, isCredit: Swift.Bool?)
   public func hash(into hasher: inout Swift.Hasher)
@@ -489,6 +514,12 @@ public struct AboutTapToPayLineView : SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI21AboutTapToPayLineViewV4bodyQrvp", 0) __
+}
+extension SwiftUI.View {
+  public func ansaSheet<Content>(isPresented: SwiftUI.Binding<Swift.Bool>, onDismiss: (() -> Swift.Void)? = nil, @SwiftUI.ViewBuilder content: @escaping () -> Content) -> some SwiftUI.View where Content : SwiftUI.View
+  
+  public func ansaSheet<Item, Content>(item: SwiftUI.Binding<Item?>, onDismiss: (() -> Swift.Void)? = nil, @SwiftUI.ViewBuilder content: @escaping (Item) -> Content) -> some SwiftUI.View where Item : Swift.Identifiable, Content : SwiftUI.View
+  
 }
 public struct CurrencyTextFieldSwiftUIWrapper : SwiftUI.UIViewRepresentable {
   public init(_ placeholder: Swift.String = "", value: SwiftUI.Binding<Swift.Double?>, isResponder: SwiftUI.Binding<Swift.Bool>? = nil, tag: Swift.Int = 0, alwaysShowFractions: Swift.Bool = true, numberOfDecimalPlaces: Swift.Int = 2, currencySymbol: Swift.String? = "$", font: UIKit.UIFont? = nil, foregroundColor: UIKit.UIColor? = nil, accentColor: UIKit.UIColor? = nil, textAlignment: UIKit.NSTextAlignment? = nil, contentType: UIKit.UITextContentType? = nil, autocorrection: UIKit.UITextAutocorrectionType = .default, autocapitalization: UIKit.UITextAutocapitalizationType = .sentences, keyboardType: UIKit.UIKeyboardType = .decimalPad, returnKeyType: UIKit.UIReturnKeyType = .default, isSecure: Swift.Bool = false, isUserInteractionEnabled: Swift.Bool = true, clearsOnBeginEditing: Swift.Bool = false, onDoneClick: @escaping () -> Swift.Void = {}, onReturn: @escaping () -> Swift.Void = {}, onEditingChanged: @escaping (Swift.Bool) -> Swift.Void = { _ in })
