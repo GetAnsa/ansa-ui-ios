@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		XXODzUL/gbDBh9oV37YHBvS4oN0=
+		/TRRh4nkjXcuYGpHyfbEhwd9zsI=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		XXODzUL/gbDBh9oV37YHBvS4oN0=
+		/TRRh4nkjXcuYGpHyfbEhwd9zsI=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XhOY9r1ducHpKLC22PdTDH2WVOgWgXP+Fa4sF9Igm/8=
+			H7qissO4W6Ou9ELowLLIgHbqsbRtE9Sn+gg1NG/paHI=
 			</data>
 		</dict>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XhOY9r1ducHpKLC22PdTDH2WVOgWgXP+Fa4sF9Igm/8=
+			H7qissO4W6Ou9ELowLLIgHbqsbRtE9Sn+gg1NG/paHI=
 			</data>
 		</dict>
 		<key>Modules/AnsaUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
