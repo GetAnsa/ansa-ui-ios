@@ -18,7 +18,7 @@ import _SwiftConcurrencyShims
   public static func set(brandColors: AnsaUI.BrandColors? = nil, fonts: AnsaUI.AnsaFonts? = nil)
   @objc deinit
 }
-public enum PaymentMethodUiModel : Swift.Equatable, Swift.Hashable {
+public enum PaymentMethodUiModel : Swift.Equatable, Swift.Hashable, Swift.Identifiable {
   case creditCard(uiModel: AnsaUI.CardUiModel)
   case applePay
   case unknown
@@ -34,6 +34,7 @@ public enum PaymentMethodUiModel : Swift.Equatable, Swift.Hashable {
   public func isValid() -> Swift.Bool
   public static func == (a: AnsaUI.PaymentMethodUiModel, b: AnsaUI.PaymentMethodUiModel) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public typealias ID = Swift.String?
   public var hashValue: Swift.Int {
     get
   }
@@ -92,6 +93,15 @@ public struct PaymentMethodPreview : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI29RedeemGiftCardBottomSheetViewV4bodyQrvp", 0) __
 }
 
+public struct SelectPaymentMethodOptionView : SwiftUI.View {
+  #if compiler(>=5.3) && $AsyncAwait
+  public init(paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, disableApplePay: Swift.Bool, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, onBackClicked: @escaping () -> Swift.Void, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction)
+  #endif
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI29SelectPaymentMethodOptionViewV4bodyQrvp", 0) __
+}
 public struct AnsaErrorView : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -150,7 +160,7 @@ public struct GiftCardActionView : SwiftUI.View {
 public typealias CreateVirtualCardAction = () async -> (Swift.Result<AnsaShared.VirtualCard, AnsaCore.AnsaApiError>)
 #endif
 #if compiler(>=5.3) && $AsyncAwait
-public typealias ProvisioningVirtualCardAction = (Swift.String, AnsaShared.WalletProvider) async -> (Swift.Result<AnsaShared.Provisioning, AnsaCore.AnsaApiError>)
+public typealias ProvisioningVirtualCardAction = (Swift.String, AnsaShared.WalletProvider) async -> (Swift.Result<any AnsaShared.Provisioning, AnsaCore.AnsaApiError>)
 #endif
 extension AnsaShared.VirtualCard : Swift.Identifiable {
   public typealias ID = Swift.String
@@ -187,9 +197,12 @@ public struct AutoReloadActionView : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI20AutoReloadActionViewV4bodyQrvp", 0) __
 }
 public typealias AddPaymentSourceClick = (() -> Swift.Void)
+#if compiler(>=5.3) && $AsyncAwait
+public typealias DeletePaymentSourceAction = ((Swift.String) async -> Swift.Bool)
+#endif
 @_Concurrency.MainActor(unsafe) public struct AddFundsBottomSheet : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], applePayConfiguration: AnsaUI.ApplePayConfiguration?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaUI.AnsaError>)
+  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, applePayConfiguration: AnsaUI.ApplePayConfiguration?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaUI.AnsaError>)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -238,6 +251,7 @@ public struct BodyFonts {
 @_hasMissingDesignatedInitializers public class PaymentMethodUpdateManager {
   public static let shared: AnsaUI.PaymentMethodUpdateManager
   public func onPaymentMethodAdded(paymentMethod: AnsaShared.PaymentMethod)
+  public func onPaymentMethodDeleted(paymentMethodId: Swift.String)
   @objc deinit
 }
 public typealias AmountInCents = Swift.Int
@@ -270,6 +284,12 @@ public enum ApplePayResult {
 public enum AnsaError : Swift.Error {
   case readableError(Swift.String)
   case genericError
+}
+public struct PaymentMethodOptionsList : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI24PaymentMethodOptionsListV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor(unsafe) public struct TapToPayAddToWalletView : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
@@ -431,7 +451,7 @@ public struct AlertView : SwiftUI.View {
 
 @_Concurrency.MainActor(unsafe) public struct AutoReloadBottomSheetView : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor(unsafe) public init(autoReloadUiModel: AnsaUI.AutoReloadUiModel, reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: [AnsaUI.PaymentMethodUiModel], addPaymentSourceClick: @escaping () -> Swift.Void, onSaveClick: @escaping (AnsaUI.AutoReloadUpdateInfo) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaUI.AnsaError>)
+  @_Concurrency.MainActor(unsafe) public init(autoReloadUiModel: AnsaUI.AutoReloadUiModel, reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction, onSaveClick: @escaping (AnsaUI.AutoReloadUpdateInfo) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaUI.AnsaError>)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
