@@ -1016,6 +1016,33 @@
             "moduleName": "AnsaUI"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardBrand",
+                "printedName": "AnsaUI.CardBrand",
+                "usr": "s:6AnsaUI9CardBrandO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6AnsaUI9CardBrandO4fromACSS_tcfc",
+            "mangledName": "$s6AnsaUI9CardBrandO4fromACSS_tcfc",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "displayname",
             "printedName": "displayname",
@@ -6969,6 +6996,96 @@
         "name": "PaymentMethodOptionsList",
         "printedName": "PaymentMethodOptionsList",
         "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(paymentMethods:disableApplePay:selectedPaymentMethod:deletePaymentSourceAction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentMethodOptionsList",
+                "printedName": "AnsaUI.PaymentMethodOptionsList",
+                "usr": "s:6AnsaUI24PaymentMethodOptionsListV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AnsaUI.PaymentMethodUiModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentMethodUiModel",
+                        "printedName": "AnsaUI.PaymentMethodUiModel",
+                        "usr": "s:6AnsaUI20PaymentMethodUiModelO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AnsaUI.PaymentMethodUiModel?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentMethodUiModel",
+                        "printedName": "AnsaUI.PaymentMethodUiModel",
+                        "usr": "s:6AnsaUI20PaymentMethodUiModelO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) async -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6AnsaUI24PaymentMethodOptionsListV14paymentMethods15disableApplePay08selectedcD006deleteC12SourceActionAC05SwiftB07BindingVySayAA0cD7UiModelOGG_SbAJyALSgGSbSSYactcfc",
+            "mangledName": "$s6AnsaUI24PaymentMethodOptionsListV14paymentMethods15disableApplePay08selectedcD006deleteC12SourceActionAC05SwiftB07BindingVySayAA0cD7UiModelOGG_SbAJyALSgGSbSSYactcfc",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
           {
             "kind": "Var",
             "name": "body",
@@ -14020,6 +14137,101 @@
           "Available"
         ],
         "isExternal": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentMethod",
+        "printedName": "PaymentMethod",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toUiModel",
+            "printedName": "toUiModel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentMethodUiModel",
+                "printedName": "AnsaUI.PaymentMethodUiModel",
+                "usr": "s:6AnsaUI20PaymentMethodUiModelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So23AnsaSharedPaymentMethodC0A2UIE9toUiModelAC0cdgH0OyF",
+            "mangledName": "$sSo23AnsaSharedPaymentMethodC0A2UIE9toUiModelAC0cdgH0OyF",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedPaymentMethod",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedPaymentMethod",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",

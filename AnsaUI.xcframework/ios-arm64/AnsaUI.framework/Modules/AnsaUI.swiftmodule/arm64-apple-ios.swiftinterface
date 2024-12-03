@@ -56,6 +56,7 @@ public enum CardBrand {
   case discover
   case dinersClub
   case unknown
+  public init(from brandString: Swift.String)
   public var displayname: Swift.String {
     get
   }
@@ -286,6 +287,9 @@ public enum AnsaError : Swift.Error {
   case genericError
 }
 public struct PaymentMethodOptionsList : SwiftUI.View {
+  #if compiler(>=5.3) && $AsyncAwait
+  public init(paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, disableApplePay: Swift.Bool, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction)
+  #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -343,6 +347,9 @@ public struct AnsaButton : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI0A6ButtonV4bodyQrvp", 0) __
 }
 
+extension AnsaShared.PaymentMethod {
+  public func toUiModel() -> AnsaUI.PaymentMethodUiModel
+}
 public struct GiftCardConfigurationUiModel {
 }
 public struct TapToPayUiModel {
