@@ -15852,56 +15852,56 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 522,
+      "offset": 526,
       "length": 7,
       "value": "\"$0.00\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 651,
+      "offset": 655,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1158,
+      "offset": 1162,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "Array",
-      "offset": 1296,
+      "offset": 1300,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "Array",
-      "offset": 1366,
+      "offset": 1370,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1483,
+      "offset": 1487,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1530,
+      "offset": 1534,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1582,
+      "offset": 1586,
       "length": 5,
       "value": "false"
     },

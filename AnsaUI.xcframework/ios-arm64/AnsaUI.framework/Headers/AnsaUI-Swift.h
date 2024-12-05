@@ -300,7 +300,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-
 @class NSCoder;
 @class UIView;
 
@@ -311,9 +310,6 @@ SWIFT_CLASS("_TtC6AnsaUI19CurrencyUITextField")
 - (void)deleteBackward;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
-
-
-
 
 
 

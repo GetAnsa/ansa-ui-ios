@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/AnsaUI-Swift.h</key>
 		<data>
-		jmmRZ+jW0w5Y30S4e4I4kWuj7B0=
+		F7m7HMyV0b7ZTMBkH0qyOHANOX4=
 		</data>
 		<key>Headers/AnsaUI.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		sDhPdPeCzI1LeNU4i7duT8M4aAs=
+		bzul8PFipmZ41KXaEVWaLgtAp88=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ascau/hceeRUMg5zc2USjEli8e4=
+		uYNwAjdRQEIUIFlSptsnA5n/4NE=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sDhPdPeCzI1LeNU4i7duT8M4aAs=
+		bzul8PFipmZ41KXaEVWaLgtAp88=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Gd6yMmnJyYTIfUi9ZFPgW8+XHzA=
+		Gm2EsG1EaIH0oNfFaOac3/BRdRE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nz4QMA30mZcTESXHjJb7aXJrB11xqbIHusabVQlwF7o=
+			zpiqLPgR/RezbClWJtHccRtXJ1D8N2Y1S9ZH3VsmLsU=
 			</data>
 		</dict>
 		<key>Headers/AnsaUI.h</key>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LLXxMmgiGcOGDswR8JnejaH1fn8cRJOd2Lp0JlHE54c=
+			b4fidxdUxkaIip2rEPhkh1SJ3LMmog3UJiK62yORL5o=
 			</data>
 		</dict>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -120,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cjgndf9TRtTrWCGslAEt6EvnJe8lmPHdRR9v3cXRFpM=
+			/ScnrhFemXNT3YT1wixSQqhLpIDuE0qhnsMP9iGxgvU=
 			</data>
 		</dict>
 		<key>Modules/AnsaUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LLXxMmgiGcOGDswR8JnejaH1fn8cRJOd2Lp0JlHE54c=
+			b4fidxdUxkaIip2rEPhkh1SJ3LMmog3UJiK62yORL5o=
 			</data>
 		</dict>
 		<key>Modules/AnsaUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VSvrMBhKPpfFulwu+ghjFpjfJI2OHxqVRXciakG3HU8=
+			ZoSdFTorkceBUNNAXcM8AMH7uKRI4OFjHUWsGRf+Qrg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
