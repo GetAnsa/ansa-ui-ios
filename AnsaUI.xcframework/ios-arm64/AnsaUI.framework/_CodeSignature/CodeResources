@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/AnsaUI-Swift.h</key>
 		<data>
-		Y0ejYlh8ttwX8blYQ5jP6kNpvyI=
+		1NwlxME8nxeBsaWDBGukm+zv870=
 		</data>
 		<key>Headers/AnsaUI.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		KGC3CXoUXAFvMvZceq1sNXPwy2E=
+		BbyoXfCb3/KMPsSeZg4r7gN2rLk=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		05S77gXBCuTXJUY9bawUPUGAC7g=
+		jA8/1tjM1SWLanFimTt2R4hec4s=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		05S77gXBCuTXJUY9bawUPUGAC7g=
+		jA8/1tjM1SWLanFimTt2R4hec4s=
 		</data>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rZ85o8Az/IOvJ6BC9HzNy+LwyAo=
+		P/vt4bKyxGmI2rmj2PD69CbJKD0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4YtaKwQbopPP/Zesc+xMTIK9IQ2CLc9ODuehIGioaEk=
+			KcG2OK0U9nzt549NYPU4WheNhmcDDxuPpA21sTAVoH4=
 			</data>
 		</dict>
 		<key>Headers/AnsaUI.h</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g2vkCVqyRYH/mRnpttBdgZBbfFANAXq/QLnn+7t0lWs=
+			MunFBlg/kW2+RvawLcyfM5SRzHadrpNHkreenCKROFw=
 			</data>
 		</dict>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NkBtW4SUg3v3d9cAkSxpSDemvgE+IbRKpz3YJK4Mu8s=
+			eBIwpgiNu/9O9E3aIuYbM+R0ZF1jiF4zolXSrbah7/4=
 			</data>
 		</dict>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NkBtW4SUg3v3d9cAkSxpSDemvgE+IbRKpz3YJK4Mu8s=
+			eBIwpgiNu/9O9E3aIuYbM+R0ZF1jiF4zolXSrbah7/4=
 			</data>
 		</dict>
 		<key>Modules/AnsaUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WnpgGbLceL/icNbdsu9fWA9gFlshgFZ0sNhmEHqvNc0=
+			6OvIvz4G8t8b8osKXHJZHFF0hGddqigpQ292zUamXMg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

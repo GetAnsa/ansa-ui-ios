@@ -5803,14 +5803,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "PaymentMethod",
-                "printedName": "AnsaShared.PaymentMethod",
-                "usr": "c:objc(cs)AnsaSharedPaymentMethod"
+                "name": "CustomerPaymentMethod",
+                "printedName": "AnsaCore.CustomerPaymentMethod",
+                "usr": "s:8AnsaCore21CustomerPaymentMethodV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AnsaUI26PaymentMethodUpdateManagerC02oncD5Added07paymentD0ySo0a6SharedcD0C_tF",
-            "mangledName": "$s6AnsaUI26PaymentMethodUpdateManagerC02oncD5Added07paymentD0ySo0a6SharedcD0C_tF",
+            "usr": "s:6AnsaUI26PaymentMethodUpdateManagerC02oncD5Added07paymentD0y0A4Core08CustomercD0V_tF",
+            "mangledName": "$s6AnsaUI26PaymentMethodUpdateManagerC02oncD5Added07paymentD0y0A4Core08CustomercD0V_tF",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "AccessControl"
@@ -6684,12 +6684,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((PassKit.PKPayment) async -> AnsaUI.ApplePayResult)?",
+                "printedName": "((PassKit.PKPayment) async throws -> AnsaUI.ApplePayResult)?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(PassKit.PKPayment) async -> AnsaUI.ApplePayResult",
+                    "printedName": "(PassKit.PKPayment) async throws -> AnsaUI.ApplePayResult",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6711,8 +6711,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI21ApplePayConfigurationV05appleD12MerchantName0fdG2Id03addC13PaymentMethodACSS_SSAA0cD6ResultOSo9PKPaymentCYacSgtcfc",
-            "mangledName": "$s6AnsaUI21ApplePayConfigurationV05appleD12MerchantName0fdG2Id03addC13PaymentMethodACSS_SSAA0cD6ResultOSo9PKPaymentCYacSgtcfc",
+            "usr": "s:6AnsaUI21ApplePayConfigurationV05appleD12MerchantName0fdG2Id03addC13PaymentMethodACSS_SSAA0cD6ResultOSo9PKPaymentCYaKcSgtcfc",
+            "mangledName": "$s6AnsaUI21ApplePayConfigurationV05appleD12MerchantName0fdG2Id03addC13PaymentMethodACSS_SSAA0cD6ResultOSo9PKPaymentCYaKcSgtcfc",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "AccessControl"
@@ -10669,18 +10669,18 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AnsaUI.AutoReloadUpdateInfo) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaUI.AnsaError>",
+                "printedName": "(AnsaUI.AutoReloadUpdateInfo) async -> Swift.Result<AnsaCore.CustomerAutoReloadConfiguration, AnsaUI.AnsaError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaUI.AnsaError>",
+                    "printedName": "Swift.Result<AnsaCore.CustomerAutoReloadConfiguration, AnsaUI.AnsaError>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AutoReloadConfiguration",
-                        "printedName": "AnsaShared.AutoReloadConfiguration",
-                        "usr": "c:objc(cs)AnsaSharedAutoReloadConfiguration"
+                        "name": "CustomerAutoReloadConfiguration",
+                        "printedName": "AnsaCore.CustomerAutoReloadConfiguration",
+                        "usr": "s:8AnsaCore31CustomerAutoReloadConfigurationV"
                       },
                       {
                         "kind": "TypeNominal",
@@ -10701,8 +10701,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI25AutoReloadBottomSheetViewV04autoD7UiModel13reloadBuckets26customCurrencyInputSetting14paymentMethods21addPaymentSourceClick06deletetU6Action06onSaveV0AcA0cdiJ0O_SayAA0d6BucketiJ0VGAA06CustomnoP0O05SwiftB07BindingVySayAA0t6MethodiJ0OGGyycSbSSYacs6ResultOySo0a6SharedcD13ConfigurationCAA0A5ErrorOGAA0cD10UpdateInfoOYactcfc",
-            "mangledName": "$s6AnsaUI25AutoReloadBottomSheetViewV04autoD7UiModel13reloadBuckets26customCurrencyInputSetting14paymentMethods21addPaymentSourceClick06deletetU6Action06onSaveV0AcA0cdiJ0O_SayAA0d6BucketiJ0VGAA06CustomnoP0O05SwiftB07BindingVySayAA0t6MethodiJ0OGGyycSbSSYacs6ResultOySo0a6SharedcD13ConfigurationCAA0A5ErrorOGAA0cD10UpdateInfoOYactcfc",
+            "usr": "s:6AnsaUI25AutoReloadBottomSheetViewV04autoD7UiModel13reloadBuckets26customCurrencyInputSetting14paymentMethods21addPaymentSourceClick06deletetU6Action06onSaveV0AcA0cdiJ0O_SayAA0d6BucketiJ0VGAA06CustomnoP0O05SwiftB07BindingVySayAA0t6MethodiJ0OGGyycSbSSYacs6ResultOy0A4Core08CustomercD13ConfigurationVAA0A5ErrorOGAA0cD10UpdateInfoOYactcfc",
+            "mangledName": "$s6AnsaUI25AutoReloadBottomSheetViewV04autoD7UiModel13reloadBuckets26customCurrencyInputSetting14paymentMethods21addPaymentSourceClick06deletetU6Action06onSaveV0AcA0cdiJ0O_SayAA0d6BucketiJ0VGAA06CustomnoP0O05SwiftB07BindingVySayAA0t6MethodiJ0OGGyycSbSSYacs6ResultOy0A4Core08CustomercD13ConfigurationVAA0A5ErrorOGAA0cD10UpdateInfoOYactcfc",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "Custom",
@@ -14140,8 +14140,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PaymentMethod",
-        "printedName": "PaymentMethod",
+        "name": "CustomerPaymentMethod",
+        "printedName": "CustomerPaymentMethod",
         "children": [
           {
             "kind": "Function",
@@ -14156,8 +14156,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So23AnsaSharedPaymentMethodC0A2UIE9toUiModelAC0cdgH0OyF",
-            "mangledName": "$sSo23AnsaSharedPaymentMethodC0A2UIE9toUiModelAC0cdgH0OyF",
+            "usr": "s:8AnsaCore21CustomerPaymentMethodV0A2UIE9toUiModelAD0dehI0OyF",
+            "mangledName": "$s8AnsaCore21CustomerPaymentMethodV0A2UIE9toUiModelAD0dehI0OyF",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "AccessControl"
@@ -14166,70 +14166,25 @@
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)AnsaSharedPaymentMethod",
-        "moduleName": "AnsaShared",
-        "objc_name": "AnsaSharedPaymentMethod",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore21CustomerPaymentMethodV",
+        "mangledName": "$s8AnsaCore21CustomerPaymentMethodV",
+        "moduleName": "AnsaCore",
         "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "AnsaShared.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -15897,56 +15852,56 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 522,
       "length": 7,
       "value": "\"$0.00\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 643,
+      "offset": 651,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1150,
+      "offset": 1158,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "Array",
-      "offset": 1288,
+      "offset": 1296,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "Array",
-      "offset": 1358,
+      "offset": 1366,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1475,
+      "offset": 1483,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1522,
+      "offset": 1530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/BalanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1574,
+      "offset": 1582,
       "length": 5,
       "value": "false"
     },
