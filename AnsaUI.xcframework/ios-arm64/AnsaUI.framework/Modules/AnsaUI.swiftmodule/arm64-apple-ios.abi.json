@@ -16125,49 +16125,49 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Alert\/AlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2336,
+      "offset": 2370,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Alert\/AlertView.swift",
       "kind": "StringLiteral",
-      "offset": 2400,
+      "offset": 2434,
       "length": 24,
       "value": "\"Bonus funds available!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Alert\/AlertView.swift",
       "kind": "StringLiteral",
-      "offset": 2449,
+      "offset": 2483,
       "length": 15,
       "value": "\"Add funds now\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Alert\/AlertView.swift",
       "kind": "StringLiteral",
-      "offset": 2601,
+      "offset": 2635,
       "length": 24,
       "value": "\"Bonus funds available!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Alert\/AlertView.swift",
       "kind": "StringLiteral",
-      "offset": 2790,
+      "offset": 2824,
       "length": 62,
       "value": "\"Add funds to your wallet now and enjoy bonus funds for free!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Alert\/AlertView.swift",
       "kind": "StringLiteral",
-      "offset": 3017,
+      "offset": 3051,
       "length": 25,
       "value": "\"Your funds expire soon!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/Alert\/AlertView.swift",
       "kind": "StringLiteral",
-      "offset": 3067,
+      "offset": 3101,
       "length": 25,
       "value": "\"$9.36 expires on July 3\""
     },
