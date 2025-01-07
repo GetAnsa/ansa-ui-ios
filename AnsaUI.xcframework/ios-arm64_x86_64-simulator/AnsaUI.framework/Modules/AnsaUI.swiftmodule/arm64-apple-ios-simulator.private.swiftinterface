@@ -218,8 +218,8 @@ public struct TransactionHistoryTable : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI23TransactionHistoryTableV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor(unsafe) public struct ManagedAnsaBalanceScreen<Content> : SwiftUI.View where Content : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), addPaymentSourceContent: @escaping () -> Content)
-  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false)) where Content == SwiftUI.EmptyView
+  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), addPaymentSourceContent: @escaping () -> Content, showPaymentSourceSheet: SwiftUI.Binding<Swift.Bool?> = .constant(nil))
+  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), showPaymentSourceSheet: SwiftUI.Binding<Swift.Bool?> = .constant(nil)) where Content == SwiftUI.EmptyView
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }

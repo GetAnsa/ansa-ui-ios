@@ -4368,6 +4368,13 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -4826,7 +4833,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(ansaClient:customerId:merchantId:applePayConfiguration:triggerRefresh:addPaymentSourceContent:)",
+            "printedName": "init(ansaClient:customerId:merchantId:applePayConfiguration:triggerRefresh:addPaymentSourceContent:showPaymentSourceSheet:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4905,11 +4912,34 @@
                     "printedName": "()"
                   }
                 ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI7BindingV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefresh23addPaymentSourceContentACyxG0A4Core0aG0_p_S2SAA05ApplelM0VSg05SwiftB07BindingVySbGxyctcfc",
-            "mangledName": "$s6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefresh23addPaymentSourceContentACyxG0A4Core0aG0_p_S2SAA05ApplelM0VSg05SwiftB07BindingVySbGxyctcfc",
+            "usr": "s:6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefresh23addPaymentSourceContent04showqR5SheetACyxG0A4Core0aG0_p_S2SAA05ApplelM0VSg05SwiftB07BindingVySbGxycASySbSgGtcfc",
+            "mangledName": "$s6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefresh23addPaymentSourceContent04showqR5SheetACyxG0A4Core0aG0_p_S2SAA05ApplelM0VSg05SwiftB07BindingVySbGxycASySbSgGtcfc",
             "moduleName": "AnsaUI",
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
             "sugared_genericSig": "<Content where Content : SwiftUI.View>",
@@ -4922,7 +4952,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(ansaClient:customerId:merchantId:applePayConfiguration:triggerRefresh:)",
+            "printedName": "init(ansaClient:customerId:merchantId:applePayConfiguration:triggerRefresh:showPaymentSourceSheet:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4984,11 +5014,34 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI7BindingV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefreshACy05SwiftB09EmptyViewVG0A4Core0aG0_p_S2SAA05ApplelM0VSgAI7BindingVySbGtcAKRszrlufc",
-            "mangledName": "$s6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefreshACy05SwiftB09EmptyViewVG0A4Core0aG0_p_S2SAA05ApplelM0VSgAI7BindingVySbGtcAKRszrlufc",
+            "usr": "s:6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefresh22showPaymentSourceSheetACy05SwiftB09EmptyViewVG0A4Core0aG0_p_S2SAA05ApplelM0VSgAJ7BindingVySbGATySbSgGtcALRszrlufc",
+            "mangledName": "$s6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefresh22showPaymentSourceSheetACy05SwiftB09EmptyViewVG0A4Core0aG0_p_S2SAA05ApplelM0VSgAJ7BindingVySbGATySbSgGtcALRszrlufc",
             "moduleName": "AnsaUI",
             "genericSig": "<τ_0_0 where τ_0_0 == SwiftUI.EmptyView>",
             "sugared_genericSig": "<Content where Content == SwiftUI.EmptyView>",
@@ -10554,6 +10607,13 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -15481,14 +15541,42 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1022,
+      "offset": 1067,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1626,
+      "offset": 1792,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5850,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5885,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5927,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5963,
       "length": 5,
       "value": "false"
     },
@@ -15719,7 +15807,7 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/ManagedAutoReloadBottomSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 259,
+      "offset": 261,
       "length": 5,
       "value": "false"
     },
