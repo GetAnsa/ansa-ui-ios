@@ -217,13 +217,12 @@ public struct TransactionHistoryTable : SwiftUI.View {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI23TransactionHistoryTableV4bodyQrvp", 0) __
 }
-@_Concurrency.MainActor(unsafe) public struct ManagedAnsaBalanceScreen<Content> : SwiftUI.View where Content : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), addPaymentSourceContent: @escaping () -> Content, showPaymentSourceSheet: SwiftUI.Binding<Swift.Bool?> = .constant(nil))
-  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), showPaymentSourceSheet: SwiftUI.Binding<Swift.Bool?> = .constant(nil)) where Content == SwiftUI.EmptyView
+@_Concurrency.MainActor(unsafe) public struct ManagedAnsaBalanceScreen : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), onAddCard: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI07ManagedA13BalanceScreenV4bodyQrvp", 0) __<Content>
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI07ManagedA13BalanceScreenV4bodyQrvp", 0) __
 }
 public struct AnsaActionView<EndSlotView> : SwiftUI.View where EndSlotView : SwiftUI.View {
   public init(icon: SwiftUI.Image?, label: Swift.String, subtitle: Swift.String? = nil, endSlot: @escaping () -> EndSlotView, onClick: @escaping () -> Swift.Void)
@@ -251,6 +250,7 @@ public struct BodyFonts {
 }
 @_hasMissingDesignatedInitializers public class PaymentMethodUpdateManager {
   public static let shared: AnsaUI.PaymentMethodUpdateManager
+  public func onAddPaymentMethodCancelled()
   public func onPaymentMethodAdded(paymentMethod: AnsaCore.CustomerPaymentMethod)
   public func onPaymentMethodDeleted(paymentMethodId: Swift.String)
   @objc deinit
