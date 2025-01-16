@@ -4360,6 +4360,266 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TermsAndConditions",
+        "printedName": "TermsAndConditions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "prefixText",
+            "printedName": "prefixText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI18TermsAndConditionsV10prefixTextSSvp",
+            "mangledName": "$s6AnsaUI18TermsAndConditionsV10prefixTextSSvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI18TermsAndConditionsV10prefixTextSSvg",
+                "mangledName": "$s6AnsaUI18TermsAndConditionsV10prefixTextSSvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clicklableText",
+            "printedName": "clicklableText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI18TermsAndConditionsV14clicklableTextSSvp",
+            "mangledName": "$s6AnsaUI18TermsAndConditionsV14clicklableTextSSvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI18TermsAndConditionsV14clicklableTextSSvg",
+                "mangledName": "$s6AnsaUI18TermsAndConditionsV14clicklableTextSSvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI18TermsAndConditionsV3urlSSvp",
+            "mangledName": "$s6AnsaUI18TermsAndConditionsV3urlSSvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI18TermsAndConditionsV3urlSSvg",
+                "mangledName": "$s6AnsaUI18TermsAndConditionsV3urlSSvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "suffixText",
+            "printedName": "suffixText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI18TermsAndConditionsV10suffixTextSSSgvp",
+            "mangledName": "$s6AnsaUI18TermsAndConditionsV10suffixTextSSSgvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI18TermsAndConditionsV10suffixTextSSSgvg",
+                "mangledName": "$s6AnsaUI18TermsAndConditionsV10suffixTextSSSgvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(prefixText:clicklableText:url:suffixText:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TermsAndConditions",
+                "printedName": "AnsaUI.TermsAndConditions",
+                "usr": "s:6AnsaUI18TermsAndConditionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6AnsaUI18TermsAndConditionsV10prefixText010clicklableG03url06suffixG0ACSS_S3SSgtcfc",
+            "mangledName": "$s6AnsaUI18TermsAndConditionsV10prefixText010clicklableG03url06suffixG0ACSS_S3SSgtcfc",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6AnsaUI18TermsAndConditionsV",
+        "mangledName": "$s6AnsaUI18TermsAndConditionsV",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "AnsaCore",
         "printedName": "AnsaCore",
@@ -4833,7 +5093,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(ansaClient:customerId:merchantId:applePayConfiguration:triggerRefresh:onAddCard:)",
+            "printedName": "init(ansaClient:customerId:merchantId:termsAndConditions:applePayConfiguration:triggerRefresh:onAddCard:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4858,6 +5118,21 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaUI.TermsAndConditions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TermsAndConditions",
+                    "printedName": "AnsaUI.TermsAndConditions",
+                    "usr": "s:6AnsaUI18TermsAndConditionsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -4917,8 +5192,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefresh9onAddCardAC0A4Core0aG0_p_S2SAA05ApplelM0VSg05SwiftB07BindingVySbGyycSgtcfc",
-            "mangledName": "$s6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI021applePayConfiguration14triggerRefresh9onAddCardAC0A4Core0aG0_p_S2SAA05ApplelM0VSg05SwiftB07BindingVySbGyycSgtcfc",
+            "usr": "s:6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI018termsAndConditions21applePayConfiguration14triggerRefresh9onAddCardAC0A4Core0aG0_p_S2SAA05TermslM0VSgAA05AppleoP0VSg05SwiftB07BindingVySbGyycSgtcfc",
+            "mangledName": "$s6AnsaUI07ManagedA13BalanceScreenV10ansaClient10customerId08merchantI018termsAndConditions21applePayConfiguration14triggerRefresh9onAddCardAC0A4Core0aG0_p_S2SAA05TermslM0VSgAA05AppleoP0VSg05SwiftB07BindingVySbGyycSgtcfc",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "Custom",
@@ -5809,6 +6084,113 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TermsAndConditionsView",
+        "printedName": "TermsAndConditionsView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI22TermsAndConditionsViewV4bodyQrvp",
+            "mangledName": "$s6AnsaUI22TermsAndConditionsViewV4bodyQrvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI22TermsAndConditionsViewV4bodyQrvg",
+                "mangledName": "$s6AnsaUI22TermsAndConditionsViewV4bodyQrvg",
+                "moduleName": "AnsaUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6AnsaUI22TermsAndConditionsViewV",
+        "mangledName": "$s6AnsaUI22TermsAndConditionsViewV",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
         "moduleName": "AnsaUI",
         "declAttributes": [
           "RawDocComment"
@@ -5829,7 +6211,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(walletBalance:alertViewUiModel:tapToPayUiModel:autoReloadUiModel:giftCardConfigUiModel:transactions:cardArtUrl:isDemoMode:ansaLogger:addFundsClick:autoReloadRowClick:redeemGiftCardClick:createVirtualCardAction:provisionVirtualCardAction:onRefreshRequsted:onBackClick:)",
+            "printedName": "init(walletBalance:alertViewUiModel:tapToPayUiModel:autoReloadUiModel:giftCardConfigUiModel:transactions:cardArtUrl:isDemoMode:termsAndConditions:ansaLogger:addFundsClick:autoReloadRowClick:redeemGiftCardClick:createVirtualCardAction:provisionVirtualCardAction:onRefreshRequsted:onBackClick:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5932,6 +6314,21 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaUI.TermsAndConditions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TermsAndConditions",
+                    "printedName": "AnsaUI.TermsAndConditions",
+                    "usr": "s:6AnsaUI18TermsAndConditionsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -6136,8 +6533,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI0A13BalanceScreenV06walletC016alertViewUiModel08tapToPayhI0010autoReloadhI0014giftCardConfighI012transactions10cardArtUrl10isDemoMode10ansaLogger13addFundsClick0mN8RowClick010redeemGiftP5Click013createVirtualP6Action016provisionVirtualP6Action17onRefreshRequsted11onBackClickACSS_AA05AlertghI0VSgAA03TapklhI0VSgAA04AutonhI0OSgAA04Giftp13ConfigurationhI0VSgSayAA011TransactionhI0VGSSSgSbSo0a6SharedaZ0_pyycyycs6ResultOyytAA0A5ErrorOGSSYacSgA10_ySo0a13SharedVirtualP0C0A4Core0A8ApiErrorVGyYacA10_ySo0A18SharedProvisioning_pA19_GSS_So0A20SharedWalletProviderCtYacyyYacyycSgtcfc",
-            "mangledName": "$s6AnsaUI0A13BalanceScreenV06walletC016alertViewUiModel08tapToPayhI0010autoReloadhI0014giftCardConfighI012transactions10cardArtUrl10isDemoMode10ansaLogger13addFundsClick0mN8RowClick010redeemGiftP5Click013createVirtualP6Action016provisionVirtualP6Action17onRefreshRequsted11onBackClickACSS_AA05AlertghI0VSgAA03TapklhI0VSgAA04AutonhI0OSgAA04Giftp13ConfigurationhI0VSgSayAA011TransactionhI0VGSSSgSbSo0a6SharedaZ0_pyycyycs6ResultOyytAA0A5ErrorOGSSYacSgA10_ySo0a13SharedVirtualP0C0A4Core0A8ApiErrorVGyYacA10_ySo0A18SharedProvisioning_pA19_GSS_So0A20SharedWalletProviderCtYacyyYacyycSgtcfc",
+            "usr": "s:6AnsaUI0A13BalanceScreenV06walletC016alertViewUiModel08tapToPayhI0010autoReloadhI0014giftCardConfighI012transactions10cardArtUrl10isDemoMode18termsAndConditions10ansaLogger13addFundsClick0mN8RowClick010redeemGiftP5Click013createVirtualP6Action016provisionVirtualP6Action17onRefreshRequsted11onBackClickACSS_AA05AlertghI0VSgAA03TapklhI0VSgAA04AutonhI0OSgAA04Giftp13ConfigurationhI0VSgSayAA011TransactionhI0VGSSSgSbAA05TermsZ10ConditionsVSgSo0a6SharedA6Logger_pyycyycs6ResultOyytAA0A5ErrorOGSSYacSgA14_ySo0a13SharedVirtualP0C0A4Core0A8ApiErrorVGyYacA14_ySo0A18SharedProvisioning_pA23_GSS_So0A20SharedWalletProviderCtYacyyYacyycSgtcfc",
+            "mangledName": "$s6AnsaUI0A13BalanceScreenV06walletC016alertViewUiModel08tapToPayhI0010autoReloadhI0014giftCardConfighI012transactions10cardArtUrl10isDemoMode18termsAndConditions10ansaLogger13addFundsClick0mN8RowClick010redeemGiftP5Click013createVirtualP6Action016provisionVirtualP6Action17onRefreshRequsted11onBackClickACSS_AA05AlertghI0VSgAA03TapklhI0VSgAA04AutonhI0OSgAA04Giftp13ConfigurationhI0VSgSayAA011TransactionhI0VGSSSgSbAA05TermsZ10ConditionsVSgSo0a6SharedA6Logger_pyycyycs6ResultOyytAA0A5ErrorOGSSYacSgA14_ySo0a13SharedVirtualP0C0A4Core0A8ApiErrorVGyYacA14_ySo0A18SharedProvisioning_pA23_GSS_So0A20SharedWalletProviderCtYacyyYacyycSgtcfc",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "AccessControl"
@@ -15432,35 +15829,35 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1282,
+      "offset": 1387,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 5130,
+      "offset": 5334,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 5165,
+      "offset": 5369,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 5207,
+      "offset": 5411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/ManagedAnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 5243,
+      "offset": 5447,
       "length": 5,
       "value": "false"
     },
@@ -15635,28 +16032,28 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2384,
+      "offset": 2530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 7097,
+      "offset": 7425,
       "length": 3,
       "value": "212"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 7143,
+      "offset": 7471,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AnsaBalanceScreen\/AnsaBalanceScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 7192,
+      "offset": 7520,
       "length": 3,
       "value": "250"
     },

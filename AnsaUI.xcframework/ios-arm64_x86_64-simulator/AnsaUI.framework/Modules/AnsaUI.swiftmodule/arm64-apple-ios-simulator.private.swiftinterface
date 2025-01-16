@@ -197,6 +197,13 @@ public struct AutoReloadActionView : SwiftUI.View {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI20AutoReloadActionViewV4bodyQrvp", 0) __
 }
+public struct TermsAndConditions {
+  public let prefixText: Swift.String
+  public let clicklableText: Swift.String
+  public let url: Swift.String
+  public let suffixText: Swift.String?
+  public init(prefixText: Swift.String, clicklableText: Swift.String, url: Swift.String, suffixText: Swift.String? = nil)
+}
 public typealias AddPaymentSourceClick = (() -> Swift.Void)
 #if compiler(>=5.3) && $AsyncAwait
 public typealias DeletePaymentSourceAction = ((Swift.String) async -> Swift.Bool)
@@ -218,7 +225,7 @@ public struct TransactionHistoryTable : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI23TransactionHistoryTableV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor(unsafe) public struct ManagedAnsaBalanceScreen : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), onAddCard: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public init(ansaClient: any AnsaCore.AnsaClient, customerId: Swift.String, merchantId: Swift.String, termsAndConditions: AnsaUI.TermsAndConditions? = nil, applePayConfiguration: AnsaUI.ApplePayConfiguration? = nil, triggerRefresh: SwiftUI.Binding<Swift.Bool> = .constant(false), onAddCard: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -257,9 +264,15 @@ public struct BodyFonts {
 }
 public typealias AmountInCents = Swift.Int
 public typealias AmountInDollars = Swift.Double
+public struct TermsAndConditionsView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI22TermsAndConditionsViewV4bodyQrvp", 0) __
+}
 public struct AnsaBalanceScreen : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  public init(walletBalance: Swift.String, alertViewUiModel: AnsaUI.AlertViewUiModel?, tapToPayUiModel: AnsaUI.TapToPayUiModel?, autoReloadUiModel: AnsaUI.AutoReloadUiModel?, giftCardConfigUiModel: AnsaUI.GiftCardConfigurationUiModel?, transactions: [AnsaUI.TransactionUiModel], cardArtUrl: Swift.String?, isDemoMode: Swift.Bool, ansaLogger: any AnsaShared.AnsaLogger, addFundsClick: @escaping () -> Swift.Void, autoReloadRowClick: @escaping () -> Swift.Void, redeemGiftCardClick: AnsaUI.RedeemGiftCardAction?, createVirtualCardAction: @escaping AnsaUI.CreateVirtualCardAction, provisionVirtualCardAction: @escaping AnsaUI.ProvisioningVirtualCardAction, onRefreshRequsted: @escaping () async -> Swift.Void, onBackClick: (() -> Swift.Void)? = nil)
+  public init(walletBalance: Swift.String, alertViewUiModel: AnsaUI.AlertViewUiModel?, tapToPayUiModel: AnsaUI.TapToPayUiModel?, autoReloadUiModel: AnsaUI.AutoReloadUiModel?, giftCardConfigUiModel: AnsaUI.GiftCardConfigurationUiModel?, transactions: [AnsaUI.TransactionUiModel], cardArtUrl: Swift.String?, isDemoMode: Swift.Bool, termsAndConditions: AnsaUI.TermsAndConditions? = nil, ansaLogger: any AnsaShared.AnsaLogger, addFundsClick: @escaping () -> Swift.Void, autoReloadRowClick: @escaping () -> Swift.Void, redeemGiftCardClick: AnsaUI.RedeemGiftCardAction?, createVirtualCardAction: @escaping AnsaUI.CreateVirtualCardAction, provisionVirtualCardAction: @escaping AnsaUI.ProvisioningVirtualCardAction, onRefreshRequsted: @escaping () async -> Swift.Void, onBackClick: (() -> Swift.Void)? = nil)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
