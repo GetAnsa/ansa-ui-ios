@@ -5991,6 +5991,174 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "newAutoReloadPaymentObserver",
+            "printedName": "newAutoReloadPaymentObserver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<AnsaCore.CustomerPaymentMethod?, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AnsaCore.CustomerPaymentMethod?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomerPaymentMethod",
+                        "printedName": "AnsaCore.CustomerPaymentMethod",
+                        "usr": "s:8AnsaCore21CustomerPaymentMethodV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI26PaymentMethodUpdateManagerC013newAutoReloadC8Observer7Combine12AnyPublisherVy0A4Core08CustomercD0VSgs5NeverOGvp",
+            "mangledName": "$s6AnsaUI26PaymentMethodUpdateManagerC013newAutoReloadC8Observer7Combine12AnyPublisherVy0A4Core08CustomercD0VSgs5NeverOGvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<AnsaCore.CustomerPaymentMethod?, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AnsaCore.CustomerPaymentMethod?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CustomerPaymentMethod",
+                            "printedName": "AnsaCore.CustomerPaymentMethod",
+                            "usr": "s:8AnsaCore21CustomerPaymentMethodV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI26PaymentMethodUpdateManagerC013newAutoReloadC8Observer7Combine12AnyPublisherVy0A4Core08CustomercD0VSgs5NeverOGvg",
+                "mangledName": "$s6AnsaUI26PaymentMethodUpdateManagerC013newAutoReloadC8Observer7Combine12AnyPublisherVy0A4Core08CustomercD0VSgs5NeverOGvg",
+                "moduleName": "AnsaUI",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "newAddFundsPaymentObserver",
+            "printedName": "newAddFundsPaymentObserver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<AnsaCore.CustomerPaymentMethod?, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AnsaCore.CustomerPaymentMethod?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomerPaymentMethod",
+                        "printedName": "AnsaCore.CustomerPaymentMethod",
+                        "usr": "s:8AnsaCore21CustomerPaymentMethodV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI26PaymentMethodUpdateManagerC011newAddFundsC8Observer7Combine12AnyPublisherVy0A4Core08CustomercD0VSgs5NeverOGvp",
+            "mangledName": "$s6AnsaUI26PaymentMethodUpdateManagerC011newAddFundsC8Observer7Combine12AnyPublisherVy0A4Core08CustomercD0VSgs5NeverOGvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<AnsaCore.CustomerPaymentMethod?, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AnsaCore.CustomerPaymentMethod?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CustomerPaymentMethod",
+                            "printedName": "AnsaCore.CustomerPaymentMethod",
+                            "usr": "s:8AnsaCore21CustomerPaymentMethodV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI26PaymentMethodUpdateManagerC011newAddFundsC8Observer7Combine12AnyPublisherVy0A4Core08CustomercD0VSgs5NeverOGvg",
+                "mangledName": "$s6AnsaUI26PaymentMethodUpdateManagerC011newAddFundsC8Observer7Combine12AnyPublisherVy0A4Core08CustomercD0VSgs5NeverOGvg",
+                "moduleName": "AnsaUI",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "onAddPaymentMethodCancelled",
             "printedName": "onAddPaymentMethodCancelled()",

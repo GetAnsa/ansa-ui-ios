@@ -257,6 +257,12 @@ public struct BodyFonts {
 }
 @_hasMissingDesignatedInitializers public class PaymentMethodUpdateManager {
   public static let shared: AnsaUI.PaymentMethodUpdateManager
+  public var newAutoReloadPaymentObserver: Combine.AnyPublisher<AnsaCore.CustomerPaymentMethod?, Swift.Never> {
+    get
+  }
+  public var newAddFundsPaymentObserver: Combine.AnyPublisher<AnsaCore.CustomerPaymentMethod?, Swift.Never> {
+    get
+  }
   public func onAddPaymentMethodCancelled()
   public func onPaymentMethodAdded(paymentMethod: AnsaCore.CustomerPaymentMethod)
   public func onPaymentMethodDeleted(paymentMethodId: Swift.String)
