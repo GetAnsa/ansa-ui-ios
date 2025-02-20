@@ -26,7 +26,7 @@
           {
             "kind": "Function",
             "name": "set",
-            "printedName": "set(brandColors:fonts:)",
+            "printedName": "set(brandColors:textColors:fonts:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -51,6 +51,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "AnsaUI.BrandTextColors?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrandTextColors",
+                    "printedName": "AnsaUI.BrandTextColors",
+                    "usr": "s:6AnsaUI15BrandTextColorsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "AnsaUI.AnsaFonts?",
                 "children": [
                   {
@@ -65,8 +80,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AnsaUI0A5ThemeC3set11brandColors5fontsyAA05BrandF0VSg_AA0A5FontsVSgtFZ",
-            "mangledName": "$s6AnsaUI0A5ThemeC3set11brandColors5fontsyAA05BrandF0VSg_AA0A5FontsVSgtFZ",
+            "usr": "s:6AnsaUI0A5ThemeC3set11brandColors04textF05fontsyAA05BrandF0VSg_AA0i4TextF0VSgAA0A5FontsVSgtFZ",
+            "mangledName": "$s6AnsaUI0A5ThemeC3set11brandColors04textF05fontsyAA05BrandF0VSg_AA0i4TextF0VSgAA0A5FontsVSgtFZ",
             "moduleName": "AnsaUI",
             "static": true,
             "declAttributes": [
@@ -5630,6 +5645,373 @@
         "kind": "TypeDecl",
         "name": "AnsaFonts",
         "printedName": "AnsaFonts",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TitleFonts",
+                "printedName": "AnsaUI.TitleFonts",
+                "usr": "s:6AnsaUI10TitleFontsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI0A5FontsV5titleAA05TitleC0Vvp",
+            "mangledName": "$s6AnsaUI0A5FontsV5titleAA05TitleC0Vvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TitleFonts",
+                    "printedName": "AnsaUI.TitleFonts",
+                    "usr": "s:6AnsaUI10TitleFontsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV5titleAA05TitleC0Vvg",
+                "mangledName": "$s6AnsaUI0A5FontsV5titleAA05TitleC0Vvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TitleFonts",
+                    "printedName": "AnsaUI.TitleFonts",
+                    "usr": "s:6AnsaUI10TitleFontsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV5titleAA05TitleC0Vvs",
+                "mangledName": "$s6AnsaUI0A5FontsV5titleAA05TitleC0Vvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV5titleAA05TitleC0VvM",
+                "mangledName": "$s6AnsaUI0A5FontsV5titleAA05TitleC0VvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BodyFonts",
+                "printedName": "AnsaUI.BodyFonts",
+                "usr": "s:6AnsaUI9BodyFontsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI0A5FontsV4bodyAA04BodyC0Vvp",
+            "mangledName": "$s6AnsaUI0A5FontsV4bodyAA04BodyC0Vvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BodyFonts",
+                    "printedName": "AnsaUI.BodyFonts",
+                    "usr": "s:6AnsaUI9BodyFontsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV4bodyAA04BodyC0Vvg",
+                "mangledName": "$s6AnsaUI0A5FontsV4bodyAA04BodyC0Vvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BodyFonts",
+                    "printedName": "AnsaUI.BodyFonts",
+                    "usr": "s:6AnsaUI9BodyFontsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV4bodyAA04BodyC0Vvs",
+                "mangledName": "$s6AnsaUI0A5FontsV4bodyAA04BodyC0Vvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV4bodyAA04BodyC0VvM",
+                "mangledName": "$s6AnsaUI0A5FontsV4bodyAA04BodyC0VvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "subhead",
+            "printedName": "subhead",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI0A5FontsV7subhead05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI0A5FontsV7subhead05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV7subhead05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI0A5FontsV7subhead05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV7subhead05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI0A5FontsV7subhead05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV7subhead05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI0A5FontsV7subhead05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "footnote",
+            "printedName": "footnote",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI0A5FontsV8footnote05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI0A5FontsV8footnote05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV8footnote05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI0A5FontsV8footnote05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV8footnote05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI0A5FontsV8footnote05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI0A5FontsV8footnote05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI0A5FontsV8footnote05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsaFonts",
+                "printedName": "AnsaUI.AnsaFonts",
+                "usr": "s:6AnsaUI0A5FontsV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6AnsaUI0A5FontsVACycfc",
+            "mangledName": "$s6AnsaUI0A5FontsVACycfc",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:6AnsaUI0A5FontsV",
         "mangledName": "$s6AnsaUI0A5FontsV",
@@ -5642,6 +6024,438 @@
         "kind": "TypeDecl",
         "name": "TitleFonts",
         "printedName": "TitleFonts",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "large",
+            "printedName": "large",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI10TitleFontsV5large05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI10TitleFontsV5large05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV5large05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI10TitleFontsV5large05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV5large05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI10TitleFontsV5large05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV5large05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI10TitleFontsV5large05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "medium",
+            "printedName": "medium",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI10TitleFontsV6medium05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI10TitleFontsV6medium05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV6medium05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI10TitleFontsV6medium05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV6medium05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI10TitleFontsV6medium05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV6medium05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI10TitleFontsV6medium05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "smallSemiBold",
+            "printedName": "smallSemiBold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI10TitleFontsV13smallSemiBold05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI10TitleFontsV13smallSemiBold05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV13smallSemiBold05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI10TitleFontsV13smallSemiBold05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV13smallSemiBold05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI10TitleFontsV13smallSemiBold05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV13smallSemiBold05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI10TitleFontsV13smallSemiBold05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "smallMedium",
+            "printedName": "smallMedium",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI10TitleFontsV11smallMedium05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI10TitleFontsV11smallMedium05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV11smallMedium05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI10TitleFontsV11smallMedium05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV11smallMedium05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI10TitleFontsV11smallMedium05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV11smallMedium05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI10TitleFontsV11smallMedium05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mini",
+            "printedName": "mini",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI10TitleFontsV4mini05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI10TitleFontsV4mini05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV4mini05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI10TitleFontsV4mini05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV4mini05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI10TitleFontsV4mini05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI10TitleFontsV4mini05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI10TitleFontsV4mini05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:6AnsaUI10TitleFontsV",
         "mangledName": "$s6AnsaUI10TitleFontsV",
@@ -5654,6 +6468,266 @@
         "kind": "TypeDecl",
         "name": "BodyFonts",
         "printedName": "BodyFonts",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bold",
+            "printedName": "bold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI9BodyFontsV4bold05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI9BodyFontsV4bold05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV4bold05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI9BodyFontsV4bold05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV4bold05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI9BodyFontsV4bold05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV4bold05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI9BodyFontsV4bold05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "semibold",
+            "printedName": "semibold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI9BodyFontsV8semibold05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI9BodyFontsV8semibold05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV8semibold05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI9BodyFontsV8semibold05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV8semibold05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI9BodyFontsV8semibold05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV8semibold05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI9BodyFontsV8semibold05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "medium",
+            "printedName": "medium",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "usr": "s:7SwiftUI4FontV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AnsaUI9BodyFontsV6medium05SwiftB04FontVvp",
+            "mangledName": "$s6AnsaUI9BodyFontsV6medium05SwiftB04FontVvp",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV6medium05SwiftB04FontVvg",
+                "mangledName": "$s6AnsaUI9BodyFontsV6medium05SwiftB04FontVvg",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV6medium05SwiftB04FontVvs",
+                "mangledName": "$s6AnsaUI9BodyFontsV6medium05SwiftB04FontVvs",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AnsaUI9BodyFontsV6medium05SwiftB04FontVvM",
+                "mangledName": "$s6AnsaUI9BodyFontsV6medium05SwiftB04FontVvM",
+                "moduleName": "AnsaUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:6AnsaUI9BodyFontsV",
         "mangledName": "$s6AnsaUI9BodyFontsV",
@@ -11358,6 +12432,86 @@
         "moduleName": "AnsaUI"
       },
       {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrandTextColors",
+        "printedName": "BrandTextColors",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(primary:secondary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrandTextColors",
+                "printedName": "AnsaUI.BrandTextColors",
+                "usr": "s:6AnsaUI15BrandTextColorsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6AnsaUI15BrandTextColorsV7primary9secondaryAC05SwiftB05ColorVSg_AItcfc",
+            "mangledName": "$s6AnsaUI15BrandTextColorsV7primary9secondaryAC05SwiftB05ColorVSg_AItcfc",
+            "moduleName": "AnsaUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6AnsaUI15BrandTextColorsV",
+        "mangledName": "$s6AnsaUI15BrandTextColorsV",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaUI"
+      },
+      {
         "kind": "TypeDecl",
         "name": "PaymentCardType",
         "printedName": "PaymentCardType",
@@ -16088,70 +17242,70 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
       "kind": "IntegerLiteral",
-      "offset": 175,
+      "offset": 202,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
       "kind": "IntegerLiteral",
-      "offset": 220,
+      "offset": 256,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
       "kind": "IntegerLiteral",
-      "offset": 290,
+      "offset": 361,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
       "kind": "IntegerLiteral",
-      "offset": 335,
+      "offset": 415,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
       "kind": "IntegerLiteral",
-      "offset": 387,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 435,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
-      "kind": "IntegerLiteral",
       "offset": 476,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
       "kind": "IntegerLiteral",
-      "offset": 544,
+      "offset": 660,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
       "kind": "IntegerLiteral",
-      "offset": 591,
+      "offset": 716,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/DesignSystem\/Font\/AnsaFonts.swift",
       "kind": "IntegerLiteral",
-      "offset": 634,
+      "offset": 768,
       "length": 2,
       "value": "16"
     },

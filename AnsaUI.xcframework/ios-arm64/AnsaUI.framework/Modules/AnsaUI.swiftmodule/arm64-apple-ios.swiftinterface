@@ -15,7 +15,7 @@ import _PassKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers public class AnsaTheme {
-  public static func set(brandColors: AnsaUI.BrandColors? = nil, fonts: AnsaUI.AnsaFonts? = nil)
+  public static func set(brandColors: AnsaUI.BrandColors? = nil, textColors: AnsaUI.BrandTextColors? = nil, fonts: AnsaUI.AnsaFonts? = nil)
   @objc deinit
 }
 public enum PaymentMethodUiModel : Swift.Equatable, Swift.Hashable, Swift.Identifiable {
@@ -241,10 +241,23 @@ public struct AnsaActionView<EndSlotView> : SwiftUI.View where EndSlotView : Swi
 }
 
 public struct AnsaFonts {
+  public var title: AnsaUI.TitleFonts
+  public var body: AnsaUI.BodyFonts
+  public var subhead: SwiftUI.Font
+  public var footnote: SwiftUI.Font
+  public init()
 }
 public struct TitleFonts {
+  public var large: SwiftUI.Font
+  public var medium: SwiftUI.Font
+  public var smallSemiBold: SwiftUI.Font
+  public var smallMedium: SwiftUI.Font
+  public var mini: SwiftUI.Font
 }
 public struct BodyFonts {
+  public var bold: SwiftUI.Font
+  public var semibold: SwiftUI.Font
+  public var medium: SwiftUI.Font
 }
 @_Concurrency.MainActor(unsafe) public struct TapToPayActionView : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
@@ -483,6 +496,9 @@ public struct AlertView : SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI25AutoReloadBottomSheetViewV4bodyQrvp", 0) __
+}
+public struct BrandTextColors {
+  public init(primary: SwiftUI.Color? = nil, secondary: SwiftUI.Color? = nil)
 }
 public enum PaymentCardType : Swift.String {
   case amex
