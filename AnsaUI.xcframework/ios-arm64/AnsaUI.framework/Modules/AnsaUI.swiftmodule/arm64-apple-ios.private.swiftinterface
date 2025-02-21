@@ -15,7 +15,7 @@ import _PassKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers public class AnsaTheme {
-  public static func set(brandColors: AnsaUI.BrandColors? = nil, textColors: AnsaUI.BrandTextColors? = nil, fonts: AnsaUI.AnsaFonts? = nil)
+  public static func set(brandColors: AnsaUI.BrandColors? = nil, textColors: AnsaUI.BrandTextColors? = nil, shapes: AnsaUI.BrandShapes? = nil, fonts: AnsaUI.AnsaFonts? = nil)
   @objc deinit
 }
 public enum PaymentMethodUiModel : Swift.Equatable, Swift.Hashable, Swift.Identifiable {
@@ -94,6 +94,10 @@ public struct PaymentMethodPreview : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI29RedeemGiftCardBottomSheetViewV4bodyQrvp", 0) __
 }
 
+public struct BrandShapes {
+  public var buttonCornerRadius: Swift.Int?
+  public init(buttonCornerRadius: Swift.Int? = nil)
+}
 public struct SelectPaymentMethodOptionView : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
   public init(paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, disableApplePay: Swift.Bool, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, onBackClicked: @escaping () -> Swift.Void, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction)
@@ -372,7 +376,7 @@ public struct AnsaButton : SwiftUI.View {
   public let leftIcon: SwiftUI.Image?
   public let rightIcon: SwiftUI.Image?
   public let onClick: () -> Swift.Void
-  public init(label: Swift.String, enabled: Swift.Bool = true, backgroundColor: SwiftUI.Color? = nil, labelColor: SwiftUI.Color? = nil, cornerRadius: CoreFoundation.CGFloat = 8, isLoading: Swift.Bool = false, leftIcon: SwiftUI.Image? = nil, rightIcon: SwiftUI.Image? = nil, onClick: @escaping () -> Swift.Void)
+  public init(label: Swift.String, enabled: Swift.Bool = true, backgroundColor: SwiftUI.Color? = nil, labelColor: SwiftUI.Color? = nil, cornerRadius: CoreFoundation.CGFloat = 16, isLoading: Swift.Bool = false, leftIcon: SwiftUI.Image? = nil, rightIcon: SwiftUI.Image? = nil, onClick: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
