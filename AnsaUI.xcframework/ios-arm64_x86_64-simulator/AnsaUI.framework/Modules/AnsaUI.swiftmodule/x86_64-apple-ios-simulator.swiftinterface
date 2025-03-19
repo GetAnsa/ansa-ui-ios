@@ -100,7 +100,7 @@ public struct BrandShapes {
 }
 public struct SelectPaymentMethodOptionView : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  public init(paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, disableApplePay: Swift.Bool, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, onBackClicked: @escaping () -> Swift.Void, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction)
+  public init(paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, disableApplePay: Swift.Bool, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, onBackClicked: @escaping () -> Swift.Void, addPaymentSourceClick: @escaping () -> Swift.Void, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -194,6 +194,10 @@ public enum AutoReloadUpdateInfo {
   case enabled(paymentMethodId: Swift.String, reloadAmount: Swift.Int, reloadThreshold: Swift.Int)
   case disabled
 }
+public enum CurrentAutoReloadSelections {
+  case enabled(paymentMethodId: Swift.String?, reloadAmountSelection: AnsaUI.ReloadAmountSelection?)
+  case disabled
+}
 public struct AutoReloadActionView : SwiftUI.View {
   public init(uiModel: AnsaUI.AutoReloadUiModel, onClick: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
@@ -208,13 +212,12 @@ public struct TermsAndConditions {
   public let suffixText: Swift.String?
   public init(prefixText: Swift.String, clicklableText: Swift.String, url: Swift.String, suffixText: Swift.String? = nil)
 }
-public typealias AddPaymentSourceClick = (() -> Swift.Void)
 #if compiler(>=5.3) && $AsyncAwait
 public typealias DeletePaymentSourceAction = ((Swift.String) async -> Swift.Bool)
 #endif
 @_Concurrency.MainActor(unsafe) public struct AddFundsBottomSheet : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, applePayConfiguration: AnsaUI.ApplePayConfiguration?, onSelectPaymentSourceClick: (() -> Swift.Void)?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaUI.AnsaError>)
+  @_Concurrency.MainActor(unsafe) public init(reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, applePayConfiguration: AnsaUI.ApplePayConfiguration?, onSelectPaymentSourceClick: ((AnsaUI.CurrentAddFundsSelections) -> Swift.Void)?, addPaymentSourceClick: @escaping ((AnsaUI.CurrentAddFundsSelections) -> Swift.Void), deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction, priorUserSelections: AnsaUI.CurrentAddFundsSelections?, addFundsClick: @escaping (AnsaUI.ReloadAmountSelection, Swift.String) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaUI.AnsaError>)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -489,12 +492,14 @@ public struct AlertView : SwiftUI.View {
 
 @_Concurrency.MainActor(unsafe) public struct AutoReloadBottomSheetView : SwiftUI.View {
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor(unsafe) public init(autoReloadUiModel: AnsaUI.AutoReloadUiModel, reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, onSelectPaymentSourceClick: (() -> Swift.Void)?, addPaymentSourceClick: @escaping AnsaUI.AddPaymentSourceClick, deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction, onSaveClick: @escaping (AnsaUI.AutoReloadUpdateInfo) async -> Swift.Result<AnsaCore.CustomerAutoReloadConfiguration, AnsaUI.AnsaError>)
+  @_Concurrency.MainActor(unsafe) public init(autoReloadUiModel: AnsaUI.AutoReloadUiModel, reloadBuckets: [AnsaUI.ReloadBucketUiModel], customCurrencyInputSetting: AnsaUI.CustomCurrencyInputSetting, paymentMethods: SwiftUI.Binding<[AnsaUI.PaymentMethodUiModel]>, selectedPaymentMethod: SwiftUI.Binding<AnsaUI.PaymentMethodUiModel?>, onSelectPaymentSourceClick: ((AnsaUI.CurrentAutoReloadSelections) -> Swift.Void)?, addPaymentSourceClick: @escaping ((AnsaUI.CurrentAutoReloadSelections) -> Swift.Void), deletePaymentSourceAction: @escaping AnsaUI.DeletePaymentSourceAction, priorUserSelections: AnsaUI.CurrentAutoReloadSelections?, onSaveClick: @escaping (AnsaUI.AutoReloadUpdateInfo) async -> Swift.Result<AnsaCore.CustomerAutoReloadConfiguration, AnsaUI.AnsaError>)
   #endif
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s6AnsaUI25AutoReloadBottomSheetViewV4bodyQrvp", 0) __
+}
+public struct CurrentAddFundsSelections {
 }
 public struct BrandTextColors {
   public init(primary: SwiftUI.Color? = nil, secondary: SwiftUI.Color? = nil)

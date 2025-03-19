@@ -4408,6 +4408,136 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CurrentAutoReloadSelections",
+        "printedName": "CurrentAutoReloadSelections",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enabled",
+            "printedName": "enabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaUI.CurrentAutoReloadSelections.Type) -> (Swift.String?, AnsaUI.ReloadAmountSelection?) -> AnsaUI.CurrentAutoReloadSelections",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, AnsaUI.ReloadAmountSelection?) -> AnsaUI.CurrentAutoReloadSelections",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CurrentAutoReloadSelections",
+                        "printedName": "AnsaUI.CurrentAutoReloadSelections",
+                        "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(paymentMethodId: Swift.String?, reloadAmountSelection: AnsaUI.ReloadAmountSelection?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "AnsaUI.ReloadAmountSelection?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ReloadAmountSelection",
+                                "printedName": "AnsaUI.ReloadAmountSelection",
+                                "usr": "s:6AnsaUI21ReloadAmountSelectionO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaUI.CurrentAutoReloadSelections.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CurrentAutoReloadSelections",
+                        "printedName": "AnsaUI.CurrentAutoReloadSelections",
+                        "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO7enabledyACSSSg_AA0E15AmountSelectionOSgtcACmF",
+            "mangledName": "$s6AnsaUI27CurrentAutoReloadSelectionsO7enabledyACSSSg_AA0E15AmountSelectionOSgtcACmF",
+            "moduleName": "AnsaUI"
+          },
+          {
+            "kind": "Var",
+            "name": "disabled",
+            "printedName": "disabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaUI.CurrentAutoReloadSelections.Type) -> AnsaUI.CurrentAutoReloadSelections",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrentAutoReloadSelections",
+                    "printedName": "AnsaUI.CurrentAutoReloadSelections",
+                    "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaUI.CurrentAutoReloadSelections.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CurrentAutoReloadSelections",
+                        "printedName": "AnsaUI.CurrentAutoReloadSelections",
+                        "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO8disabledyA2CmF",
+            "mangledName": "$s6AnsaUI27CurrentAutoReloadSelectionsO8disabledyA2CmF",
+            "moduleName": "AnsaUI"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO",
+        "mangledName": "$s6AnsaUI27CurrentAutoReloadSelectionsO",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "AutoReloadActionView",
         "printedName": "AutoReloadActionView",
         "children": [
@@ -4846,7 +4976,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(reloadBuckets:customCurrencyInputSetting:paymentMethods:selectedPaymentMethod:applePayConfiguration:onSelectPaymentSourceClick:addPaymentSourceClick:deletePaymentSourceAction:addFundsClick:)",
+            "printedName": "init(reloadBuckets:customCurrencyInputSetting:paymentMethods:selectedPaymentMethod:applePayConfiguration:onSelectPaymentSourceClick:addPaymentSourceClick:deletePaymentSourceAction:priorUserSelections:addFundsClick:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4935,12 +5065,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(() -> ())?",
+                "printedName": "((AnsaUI.CurrentAddFundsSelections) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() -> ()",
+                    "printedName": "(AnsaUI.CurrentAddFundsSelections) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4949,8 +5079,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "CurrentAddFundsSelections",
+                        "printedName": "AnsaUI.CurrentAddFundsSelections",
+                        "usr": "s:6AnsaUI25CurrentAddFundsSelectionsV"
                       }
                     ]
                   }
@@ -4960,7 +5091,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() -> ()",
+                "printedName": "(AnsaUI.CurrentAddFundsSelections) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4969,8 +5100,9 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "CurrentAddFundsSelections",
+                    "printedName": "AnsaUI.CurrentAddFundsSelections",
+                    "usr": "s:6AnsaUI25CurrentAddFundsSelectionsV"
                   }
                 ]
               },
@@ -4992,6 +5124,20 @@
                     "usr": "s:SS"
                   }
                 ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaUI.CurrentAddFundsSelections?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrentAddFundsSelections",
+                    "printedName": "AnsaUI.CurrentAddFundsSelections",
+                    "usr": "s:6AnsaUI25CurrentAddFundsSelectionsV"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -5041,8 +5187,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI19AddFundsBottomSheetV13reloadBuckets26customCurrencyInputSetting14paymentMethods21selectedPaymentMethod21applePayConfiguration08onSelectP11SourceClick03addpwX006deletepW6Action0ydX0ACSayAA19ReloadBucketUiModelVG_AA06CustomjkL0O05SwiftB07BindingVySayAA0pQ7UiModelOGGATyAVSgGAA05ApplesT0VSgyycSgyycSbSSYacs6ResultOySo0A19SharedBalanceUpdate_pAA0A5ErrorOGAA21ReloadAmountSelectionO_SStYactcfc",
-            "mangledName": "$s6AnsaUI19AddFundsBottomSheetV13reloadBuckets26customCurrencyInputSetting14paymentMethods21selectedPaymentMethod21applePayConfiguration08onSelectP11SourceClick03addpwX006deletepW6Action0ydX0ACSayAA19ReloadBucketUiModelVG_AA06CustomjkL0O05SwiftB07BindingVySayAA0pQ7UiModelOGGATyAVSgGAA05ApplesT0VSgyycSgyycSbSSYacs6ResultOySo0A19SharedBalanceUpdate_pAA0A5ErrorOGAA21ReloadAmountSelectionO_SStYactcfc",
+            "usr": "s:6AnsaUI19AddFundsBottomSheetV13reloadBuckets26customCurrencyInputSetting14paymentMethods21selectedPaymentMethod21applePayConfiguration08onSelectP11SourceClick03addpwX006deletepW6Action19priorUserSelections0ydX0ACSayAA19ReloadBucketUiModelVG_AA06CustomjkL0O05SwiftB07BindingVySayAA0pQ7UiModelOGGAUyAWSgGAA05ApplesT0VSgyAA07CurrentcD10SelectionsVcSgyA4_cSbSSYacA4_Sgs6ResultOySo0A19SharedBalanceUpdate_pAA0A5ErrorOGAA21ReloadAmountSelectionO_SStYactcfc",
+            "mangledName": "$s6AnsaUI19AddFundsBottomSheetV13reloadBuckets26customCurrencyInputSetting14paymentMethods21selectedPaymentMethod21applePayConfiguration08onSelectP11SourceClick03addpwX006deletepW6Action19priorUserSelections0ydX0ACSayAA19ReloadBucketUiModelVG_AA06CustomjkL0O05SwiftB07BindingVySayAA0pQ7UiModelOGGAUyAWSgGAA05ApplesT0VSgyAA07CurrentcD10SelectionsVcSgyA4_cSbSSYacA4_Sgs6ResultOySo0A19SharedBalanceUpdate_pAA0A5ErrorOGAA21ReloadAmountSelectionO_SStYactcfc",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "Custom",
@@ -12281,7 +12427,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(autoReloadUiModel:reloadBuckets:customCurrencyInputSetting:paymentMethods:selectedPaymentMethod:onSelectPaymentSourceClick:addPaymentSourceClick:deletePaymentSourceAction:onSaveClick:)",
+            "printedName": "init(autoReloadUiModel:reloadBuckets:customCurrencyInputSetting:paymentMethods:selectedPaymentMethod:onSelectPaymentSourceClick:addPaymentSourceClick:deletePaymentSourceAction:priorUserSelections:onSaveClick:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12362,12 +12508,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(() -> ())?",
+                "printedName": "((AnsaUI.CurrentAutoReloadSelections) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() -> ()",
+                    "printedName": "(AnsaUI.CurrentAutoReloadSelections) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -12376,8 +12522,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "CurrentAutoReloadSelections",
+                        "printedName": "AnsaUI.CurrentAutoReloadSelections",
+                        "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO"
                       }
                     ]
                   }
@@ -12387,7 +12534,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() -> ()",
+                "printedName": "(AnsaUI.CurrentAutoReloadSelections) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -12396,8 +12543,9 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "CurrentAutoReloadSelections",
+                    "printedName": "AnsaUI.CurrentAutoReloadSelections",
+                    "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO"
                   }
                 ]
               },
@@ -12419,6 +12567,20 @@
                     "usr": "s:SS"
                   }
                 ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaUI.CurrentAutoReloadSelections?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrentAutoReloadSelections",
+                    "printedName": "AnsaUI.CurrentAutoReloadSelections",
+                    "usr": "s:6AnsaUI27CurrentAutoReloadSelectionsO"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -12455,8 +12617,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AnsaUI25AutoReloadBottomSheetViewV04autoD7UiModel13reloadBuckets26customCurrencyInputSetting14paymentMethods21selectedPaymentMethod08onSelectT11SourceClick03addtxY006deletetX6Action0v4SaveY0AcA0cdiJ0O_SayAA0d6BucketiJ0VGAA06CustomnoP0O05SwiftB07BindingVySayAA0tuiJ0OGGAVyAXSgGyycSgyycSbSSYacs6ResultOy0A4Core08CustomercD13ConfigurationVAA0A5ErrorOGAA0cD10UpdateInfoOYactcfc",
-            "mangledName": "$s6AnsaUI25AutoReloadBottomSheetViewV04autoD7UiModel13reloadBuckets26customCurrencyInputSetting14paymentMethods21selectedPaymentMethod08onSelectT11SourceClick03addtxY006deletetX6Action0v4SaveY0AcA0cdiJ0O_SayAA0d6BucketiJ0VGAA06CustomnoP0O05SwiftB07BindingVySayAA0tuiJ0OGGAVyAXSgGyycSgyycSbSSYacs6ResultOy0A4Core08CustomercD13ConfigurationVAA0A5ErrorOGAA0cD10UpdateInfoOYactcfc",
+            "usr": "s:6AnsaUI25AutoReloadBottomSheetViewV04autoD7UiModel13reloadBuckets26customCurrencyInputSetting14paymentMethods21selectedPaymentMethod08onSelectT11SourceClick03addtxY006deletetX6Action19priorUserSelections0v4SaveY0AcA0cdiJ0O_SayAA0d6BucketiJ0VGAA06CustomnoP0O05SwiftB07BindingVySayAA0tuiJ0OGGAWyAYSgGyAA07CurrentcD10SelectionsOcSgyA3_cSbSSYacA3_Sgs6ResultOy0A4Core08CustomercD13ConfigurationVAA0A5ErrorOGAA0cD10UpdateInfoOYactcfc",
+            "mangledName": "$s6AnsaUI25AutoReloadBottomSheetViewV04autoD7UiModel13reloadBuckets26customCurrencyInputSetting14paymentMethods21selectedPaymentMethod08onSelectT11SourceClick03addtxY006deletetX6Action19priorUserSelections0v4SaveY0AcA0cdiJ0O_SayAA0d6BucketiJ0VGAA06CustomnoP0O05SwiftB07BindingVySayAA0tuiJ0OGGAWyAYSgGyAA07CurrentcD10SelectionsOcSgyA3_cSbSSYacA3_Sgs6ResultOy0A4Core08CustomercD13ConfigurationVAA0A5ErrorOGAA0cD10UpdateInfoOYactcfc",
             "moduleName": "AnsaUI",
             "declAttributes": [
               "Custom",
@@ -12587,6 +12749,18 @@
         "printedName": "PassKit",
         "declKind": "Import",
         "moduleName": "AnsaUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CurrentAddFundsSelections",
+        "printedName": "CurrentAddFundsSelections",
+        "declKind": "Struct",
+        "usr": "s:6AnsaUI25CurrentAddFundsSelectionsV",
+        "mangledName": "$s6AnsaUI25CurrentAddFundsSelectionsV",
+        "moduleName": "AnsaUI",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -16825,63 +16999,63 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "IntegerLiteral",
-      "offset": 1269,
+      "offset": 1155,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "StringLiteral",
-      "offset": 1465,
+      "offset": 1351,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "StringLiteral",
-      "offset": 1533,
+      "offset": 1419,
       "length": 8,
       "value": "\"400040\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "StringLiteral",
-      "offset": 1567,
+      "offset": 1453,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "BooleanLiteral",
-      "offset": 1600,
+      "offset": 1486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "StringLiteral",
-      "offset": 1776,
+      "offset": 1662,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "StringLiteral",
-      "offset": 1844,
+      "offset": 1730,
       "length": 8,
       "value": "\"400040\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "StringLiteral",
-      "offset": 1878,
+      "offset": 1764,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/PaymentMethod\/PaymentMethodPreview.swift",
       "kind": "BooleanLiteral",
-      "offset": 1911,
+      "offset": 1797,
       "length": 4,
       "value": "true"
     },
@@ -16923,35 +17097,35 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 241,
+      "offset": 302,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 360,
+      "offset": 473,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 411,
+      "offset": 524,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 468,
+      "offset": 581,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Internal\/AutoReload\/AutoReloadBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 526,
+      "offset": 639,
       "length": 5,
       "value": "false"
     },
@@ -17994,21 +18168,21 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 227,
+      "offset": 324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 400,
+      "offset": 497,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Screens\/AddFunds\/AddFundsBottomSheetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 451,
+      "offset": 548,
       "length": 5,
       "value": "false"
     },
