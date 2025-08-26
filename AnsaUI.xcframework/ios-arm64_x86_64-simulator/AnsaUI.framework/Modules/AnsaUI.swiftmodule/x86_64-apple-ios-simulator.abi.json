@@ -18343,7 +18343,7 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaUI\/AnsaUI\/Components\/Public\/TapToPay\/AddPaymentPassView.swift",
       "kind": "StringLiteral",
-      "offset": 1379,
+      "offset": 1371,
       "length": 11,
       "value": "\"AnsaUI.Coordinator\""
     },
